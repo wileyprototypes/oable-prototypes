@@ -1,26 +1,75 @@
+/* Pinegrow generated Theme Init Begin */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap');
+
+$font-family-sans-serif: 'Lato', sans-serif;
+
 /* Bootstrap theme customized with Pinegrow Web Editor */
 /* Vars go before the @import */
-
 /* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
+$primary: #2185d0;
 
-//$primary: #007bff;
-//$secondary: #6c757d;
-//$success: #28a745;
-//$info: #17a2b8;
-//$warning: #ffc107;
-//$danger: #dc3545;
-//$light: #f8f9fa;
-//$dark: #343a40;
-
-//$body-bg: #ffffff;
-//$body-color: #212529;
-
+// $secondary: #6c757d;
+// $success: #28a745;
+// $info: #17a2b8;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #343a40;
+// $body-bg: #ffffff;
+// $body-color: #212529;
 /* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
-//@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
-
-//$font-family-sans-serif: 'Lato', sans-serif;
-//$headings-font-family: 'Playfair Display', serif;
-
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
+// $font-family-sans-serif: 'Lato', sans-serif;
+// $headings-font-family: 'Playfair Display', serif;
 @import "bootstrap/bootstrap";
 
+// Material design icons CSS
+.mdi {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: inherit;
+    line-height: 1;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+
+    &.mdi-18px {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+
+    &.mdi-36px {
+        font-size: 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    &.mdi-48px {
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+    }
+
+    &.mdi-64px {
+        font-size: 64px;
+        width: 64px;
+        height: 64px;
+    }
+
+    &.mdi-128px {
+        font-size: 128px;
+        width: 128px;
+        height: 128px;
+    }
+}
+
 /* Custom CSS rules come here */
+/* Pinegrow generated Additional Rules Begin */
+body,
+html {
+    min-height: 100vh;
+}
+
+/* Pinegrow generated Additional Rules End */

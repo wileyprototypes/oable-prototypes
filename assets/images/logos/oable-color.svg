@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 70.659988 24.390001"
+   version="1.1"
+   id="svg905"
+   sodipodi:docname="oable-logo-1.svg"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   width="0.73604155in"
+   height="0.2540625in">
+  <metadata
+     id="metadata909">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>oable logo_1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview907"
+     showgrid="false"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="110.75651"
+     inkscape:cy="-3.2721725"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg905"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="true"
+     units="in">
+    <sodipodi:guide
+       id="guide897"
+       orientation="1,0"
+       position="97.925235,-601.52845" />
+    <sodipodi:guide
+       id="guide899"
+       orientation="1,0"
+       position="184.55023,-607.65345" />
+  </sodipodi:namedview>
+  <defs
+     id="defs835">
+    <style
+       id="style833">.cls-1{fill:#ffc843;}.cls-2{fill:#3e39ff;}.cls-3{fill:#00b3e3;}.cls-4{fill:#a02d8b;}.cls-5{fill:#e815c0;}.cls-6{fill:#ff6b00;}.cls-7{fill:#da1800;}.cls-8{fill:none;stroke:#282884;stroke-miterlimit:10;stroke-width:0.5px;}</style>
+  </defs>
+  <title
+     id="title837">oable logo_1</title>
+  <g
+     id="g896"
+     transform="translate(0.462528,-1.6706405)">
+    <path
+       id="path839"
+       d="m 7.1874723,10.670641 a 7.66,7.66 0 1 0 7.6699997,7.659997 7.66,7.66 0 0 0 -7.6699997,-7.659997 m 0,11.109997 a 3.45,3.45 0 1 1 3.4599997,-3.45 3.46,3.46 0 0 1 -3.4599997,3.45"
+       class="cls-1" />
+    <path
+       id="path841"
+       d="m 31.067472,10.670641 h -4.21001 v 0.82 a 7.67,7.67 0 0 1 4.21001,6.839997 v -7.659997 m 0,7.659997 a 7.66,7.66 0 0 1 -4.21001,6.84 v 0.83 h 4.21001 v -7.63"
+       class="cls-2" />
+    <path
+       id="path843"
+       d="m 23.407462,10.670641 a 7.66,7.66 0 1 0 3.45,14.499997 v -6.8 a 3.45,3.45 0 1 1 -3.45,-3.45 3.44,3.44 0 0 1 3.45,3.45 v -6.839997 a 7.68,7.68 0 0 0 -3.45,-0.86"
+       class="cls-3" />
+    <path
+       id="path845"
+       d="m 26.857462,11.530641 v 13.679997 a 7.66,7.66 0 0 0 4.21001,-6.84 v 0 a 7.67,7.67 0 0 0 -4.21001,-6.839997"
+       class="cls-2" />
+    <path
+       id="path847"
+       d="m 36.857462,1.6706405 h -4.21 V 26.030638 h 4.21 v -0.82 a 7.66,7.66 0 0 1 0,-13.679997 V 1.6706405"
+       class="cls-4" />
+    <path
+       id="path849"
+       d="m 40.307462,10.670641 a 7.65,7.65 0 0 0 -3.45,0.82 v 13.719997 a 7.66,7.66 0 1 0 3.45,-14.539997 m 0,11.109997 a 3.45,3.45 0 1 1 3.45001,-3.45 3.44,3.44 0 0 1 -3.45001,3.45"
+       class="cls-5" />
+    <path
+       id="path851"
+       d="m 36.857462,11.530641 a 7.66,7.66 0 0 0 0,13.679997 V 11.530641"
+       class="cls-4" />
+    <polyline
+       transform="translate(-0.47252766,1.6706405)"
+       id="polyline853"
+       points="53.89 0.02 49.67 0.02 49.67 24.39 53.89 24.39 53.89 0.02"
+       class="cls-3" />
+    <path
+       id="path855"
+       d="m 62.317462,10.670641 a 7.6857173,7.6857173 0 1 0 0.21,15.369997 8.88,8.88 0 0 0 6.13,-2.44 l -2.73,-3.21 a 4.84,4.84 0 0 1 -3.48,1.35 3.17,3.17 0 0 1 -1.78,-0.47 l -0.14,0.06 -4.26,1.76 a 7.38,7.38 0 0 1 -1.51,-3.42 l 4.32,-1.79 v 0 a 3.32,3.32 0 0 1 2,-2.67 2.9,2.9 0 0 1 1.2,-0.25 3.32,3.32 0 0 1 2,0.7 h 0.06 l 4.19,-1.719997 a 8,8 0 0 1 0.75,1.299997 7.65,7.65 0 0 0 -7,-4.529997 m 7,4.539997 v 0 m 0,0 v 0 m 0,0 v 0 m 0,0 v 0 m 0.84,2 -4.24,1.75 4.24,-1.75"
+       class="cls-6" />
+    <path
+       id="path857"
+       d="m 69.307462,15.240638 v 0 m 0,0 v 0 m 0,0 v 0 0 m 0,0 v 0 m 0,0 v 0 l 0.82,1.95 -0.82,-1.95 v 0 m -5,0.32 -2.6,1.08 -2.5,1 -0.15,0.06 a 3.37,3.37 0 0 0 1.47,3.48 1,1 0 0 0 0.13,0.09 l 4.69,-1.93 0.57,-0.24 a 7.78,7.78 0 0 0 -1.59,-3.43"
+       class="cls-7" />
+    <path
+       id="path859"
+       d="m 68.527462,13.940641 -4.2,1.729997 a 8,8 0 0 1 1.63,3.42 l 4.24,-1.75 -0.82,-2 v 0 0 0 0 0 0 0 0 a 7.26,7.26 0 0 0 -0.74,-1.299997 m -9.49,3.909997 -4.39,1.72 a 7.38,7.38 0 0 0 1.53,3.45 l 4.24,-1.79 0.14,-0.06 a 0.51,0.51 0 0 1 -0.13,-0.09 3.37,3.37 0 0 1 -1.48,-3.33"
+       class="cls-7" />
+  </g>
+</svg>
