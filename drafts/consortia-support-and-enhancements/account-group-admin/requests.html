@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-pgc-master="dashboard.html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="../../../style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
+    </head>
+    <body>
+        <div data-pg-name="App" style="padding-left: 190px;">
+            <div class="border-end offcanvas offcanvas-start show" data-bs-scroll="true" id="appMenu" style="width: 190px;" data-bs-backdrop="false" tabindex="-1" data-pg-name="App menu">
+                <div class="offcanvas-header px-4">
+                    <img src="../../../assets/images/logos/oable-color.svg" class="img-fluid w-100"/>
+                </div>
+                <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
+                    <nav>
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../../../master-pages/requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        </div>
+                    </nav>
+                    <nav class="border-top">
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD<br/><span class="fw-normal">High output</span></span><span class="mdi mdi-18px mdi-bank"></span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div data-pg-name="App body" id="appBody" class="py-5">
+                <div class="container-fluid px-5" data-pgc-field="appBody-container">
+                    <header class="mb-5" data-pgc="viewHeader">
+                        <h1 class="fw-bold mb-4" data-pgc-field="title">Requests</h1>
+                        <section data-pg-name="filters">
+                            <div class="g-2 row">
+                                <div class="col-auto" data-pgc-field="filterSearch">
+                                    <div class="input-group input-group-sm">
+                                        <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="search"/>
+                                        <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filterSort">
+                                    <div class="input-group input-group-sm">
+                                        <select class="border form-select" id="inputGroupSelect02">
+                                            <option selected>Creation time</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <button class="align-items-center border btn btn-outline-secondary d-inline-flex" type="button" id="button-addon2">
+                                            <span class="mdi mdi-18px mdi-sort-descending"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filterPublisher">
+                                    <div class="input-group input-group-sm">
+                                        <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
+                                        <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
+                                            <option selected value="1">Wiley</option>
+                                            <option value="2">Taylor & Francis</option>
+                                            <option value="3">Elsevier</option>
+                                            <option value="3">ACS</option>
+                                            <option value="3">Springer Nature</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filterAccountGroup">
+                                    <div class="input-group input-group-sm">
+                                        <label class="input-group-text" for="inputGroupSelectAccountGroup">Account group</label>
+                                        <select class="border form-select" id="inputGroupSelectAccountGroup" style="max-width: 150px;">
+                                            <option selected value="1">All</option>
+                                            <option value="2">High output</option>
+                                            <option value="3">Low output</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filterInstitution">
+                                    <div class="input-group input-group-sm">
+                                        <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
+                                        <select class="border form-select" id="inputGroupSelectInstitution" style="max-width: 150px;">
+                                            <option selected value="1">All</option>
+                                            <option value="2">Agricultural Research Organization Volcani Center</option>
+                                            <option value="3">Ariel University</option>
+                                            <option value="3">Bar-Ilan University</option>
+                                            <option value="3">Ben-Gurion University of the Negev</option>
+                                            <option value="3">Geological Survey of Israel</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filter">
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
+                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
+                                        <span>Add Filters</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </header>
+                    <main>
+                        <div class="mb-3 overflow-x-auto">
+                            <ul class="d-flex flex-nowrap nav nav-tabs text-nowrap" id="tabs-requestStatus-tabs" role="tablist"> 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="active nav-link px-4 py-3 small" id="tab-readyProcessing" data-bs-toggle="tab" data-bs-target="#pane-readyProcessing" type="button" role="tab" aria-controls="pane-readyProcessing" aria-selected="true">Ready for processing</button>                                     
+                                </li>                                 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-assignAgreement" data-bs-toggle="tab" data-bs-target="#pane-assignAgreement" type="button" role="tab" aria-controls="pane-assignAgreement" aria-selected="false">Assign agreement <span class="badge bg-secondary ms-1">24</span>
+                                    </button>                                     
+                                </li>                                 
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-readyApproval" data-bs-toggle="tab" data-bs-target="#pane-readyApproval" type="button" role="tab" aria-controls="pane-readyApproval" aria-selected="false">Ready for approval <span class="badge bg-secondary ms-1">7</span>
+                                    </button>                                     
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-approved" data-bs-toggle="tab" data-bs-target="#pane-approved" type="button" role="tab" aria-controls="pane-approved" aria-selected="false">Approved</button>                                     
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-denied" data-bs-toggle="tab" data-bs-target="#pane-denied" type="button" role="tab" aria-controls="pane-denied" aria-selected="false">Denied</button>                                     
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-transactionsPlanned" data-bs-toggle="tab" data-bs-target="#pane-transactionsPlanned" type="button" role="tab" aria-controls="pane-transactionsPlanned" aria-selected="false">Transactions planned</button>                                     
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-paid" data-bs-toggle="tab" data-bs-target="#pane-paid" type="button" role="tab" aria-controls="pane-paid" aria-selected="false">Paid <span class="badge bg-secondary ms-1">52</span>
+                                    </button>                                     
+                                </li>
+                                <li class="nav-item" role="presentation"> 
+                                    <button class="nav-link px-4 py-3 small" id="tab-cancelled" data-bs-toggle="tab" data-bs-target="#pane-cancelled" type="button" role="tab" aria-controls="pane-cancelled" aria-selected="false">Cancelled <span class="badge bg-secondary ms-1">2</span>
+                                    </button>                                     
+                                </li>                                 
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="tabs-requestStatus-tabContent"> 
+                            <div class="tab-pane fade show active" id="pane-readyProcessing" role="tabpanel">
+                                <div class="bg-light card text-center">
+                                    <div class="card-body p-5">
+                                        <p class="fs-5 fw-bold">No requests found</p>
+                                        <p>There are no requests with this status, yet.</p>
+                                    </div>
+                                </div>
+                            </div>                             
+                            <div class="tab-pane fade" id="pane-assignAgreement" role="tabpanel">Assign agreement</div>                             
+                            <div class="tab-pane fade" id="pane-readyApproval" role="tabpanel">Ready for approval</div>
+                            <div class="tab-pane fade" id="pane-approved" role="tabpanel">Approved</div>
+                            <div class="tab-pane fade" id="pane-denied" role="tabpanel">Denied</div>
+                            <div class="tab-pane fade" id="pane-transactionsPlanned" role="tabpanel">Transactions Planned</div>
+                            <div class="tab-pane fade" id="pane-paid" role="tabpanel">Paid</div>
+                            <div class="tab-pane fade" id="pane-cancelled" role="tabpanel">Cancelled</div>                             
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div data-pg-name="modals" data-pgc-field="modals"></div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../../../assets/js/popper.min.js"></script>
+        <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

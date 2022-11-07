@@ -8,59 +8,35 @@
         <meta name="author" content=""/>
         <title>Blank Template for Bootstrap</title>
         <!-- Bootstrap core CSS -->
-        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
-        <link href="../../style.css" rel="stylesheet"/>
+        <link href="../../../style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
     </head>
     <body>
         <div data-pg-name="App" style="padding-left: 190px;">
             <div class="border-end offcanvas offcanvas-start show" data-bs-scroll="true" id="appMenu" style="width: 190px;" data-bs-backdrop="false" tabindex="-1" data-pg-name="App menu">
                 <div class="offcanvas-header px-4">
-                    <img src="../../assets/images/logos/oable-color.svg" class="img-fluid w-100"/>
+                    <img src="../../../assets/images/logos/oable-color.svg" class="img-fluid w-100"/>
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex justify-content-between list-group-item list-group-item-action px-4 py-3" href="#" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Requests</span></a> <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Inbox</span></a> <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Accounts</span></a>
-                            <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Transactions</span></a>
-                            <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate">My Consortium<br/><span>MALMAD</span></span><span class="mdi mdi-18px mdi-bank"></span></a>
-                            <a class="align-items-center d-flex justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD<br/><span class="fw-normal">High output</span></span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
             </div>
-            <div data-pg-name="App body" id="appBody" class="pb-5">
+            <div data-pg-name="App body" id="appBody" class="py-5">
                 <div class="container-fluid px-5" data-pgc-field="appBody-container">
-                    <header class="mb-5 mt-5">
-                        <h1 class="fw-bold">Overview</h1>
+                    <header class="mb-5" data-pgc="viewHeader">
+                        <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
-                                <div class="col-auto d-none">
-                                    <div class="input-group input-group-sm">
-                                        <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="search"/>
-                                        <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
-                                            <span class="mdi mdi-18px mdi-magnify"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-auto d-none">
-                                    <div class="input-group input-group-sm">
-                                        <select class="border form-select" id="inputGroupSelect02">
-                                            <option selected>Creation time</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        <button class="align-items-center border btn btn-outline-secondary d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-sort-descending"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
+                                <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
@@ -72,17 +48,17 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto" data-pgc-field="filterAccountGroup">
                                     <div class="input-group input-group-sm">
-                                        <label class="input-group-text" for="inputGroupSelect02">Account group</label>
-                                        <select class="border form-select" id="inputGroupSelect02" style="max-width: 150px;">
+                                        <label class="input-group-text" for="inputGroupSelectAccountGroup">Account group</label>
+                                        <select class="border form-select" id="inputGroupSelectAccountGroup" style="max-width: 150px;">
                                             <option selected value="1">All</option>
                                             <option value="2">High output</option>
                                             <option value="3">Low output</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto" data-pgc-field="filterInstitution">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
                                         <select class="border form-select" id="inputGroupSelectInstitution" style="max-width: 150px;">
@@ -95,7 +71,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto" data-pgc-field="filterDateRange">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectDate">Date range</label>
                                         <select class="border form-select" id="inputGroupSelectDate" style="max-width: 150px;">
@@ -108,7 +84,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto" data-pgc-field="filter">
                                     <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
                                     </button>
                                 </div>
@@ -168,7 +144,7 @@
                                     <div class="card-body">
                                         <h2 class="card-title h4">Request throughput</h2>
                                         <div id="chart"></div>
-                                        <script src="../../assets/js/charts.js"></script>
+                                        <script src="../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
                             </div>
@@ -179,11 +155,11 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Agreement name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
-                                                    <span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
-                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">2 agreements</span>
+                                            <div class="align-items-center d-flex">
+                                                <span class="badge bg-secondary">2 agreements</span>
                                             </div>
                                         </div>
                                         <div>
@@ -221,7 +197,8 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 agreements</span>
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary">2 agreements</span>
                                             </div>
                                         </div>
                                     </div>
@@ -234,11 +211,11 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Group name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
-                                                    <span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
-                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">2 account groups</span>
+                                            <div class="align-items-center d-flex">
+                                                <span class="badge bg-secondary">2 account groups</span>
                                             </div>
                                         </div>
                                         <div>
@@ -288,7 +265,8 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 account groups</span>
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary">2 account groups</span>
                                             </div>
                                         </div>
                                     </div>
@@ -301,26 +279,22 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Account name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
+                                                    <span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
                                             <div class="align-items-center d-flex"><span class="badge bg-secondary">48 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">Previous</a>
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">1</a>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">2</a>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">3</a>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">Next</a>
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
                                                         </li>                                                         
                                                     </ul>                                                     
                                                 </nav>
@@ -448,20 +422,15 @@
                                             <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">48 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">Previous</a>
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">1</a>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">2</a>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">3</a>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
                                                         </li>                                                         
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">Next</a>
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
                                                         </li>                                                         
                                                     </ul>                                                     
                                                 </nav>
@@ -479,7 +448,7 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../../assets/js/popper.min.js"></script>
-        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../../assets/js/popper.min.js"></script>
+        <script src="../../../bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

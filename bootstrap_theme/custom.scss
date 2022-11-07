@@ -7,22 +7,126 @@ $font-family-sans-serif: 'Lato', sans-serif;
 /* Vars go before the @import */
 /* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
 $primary: #2185d0;
+$min-contrast-ratio: 4.5;
 
-// $secondary: #6c757d;
-// $success: #28a745;
-// $info: #17a2b8;
-// $warning: #ffc107;
-// $danger: #dc3545;
-// $light: #f8f9fa;
-// $dark: #343a40;
-// $body-bg: #ffffff;
-// $body-color: #212529;
-/* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
-// $font-family-sans-serif: 'Lato', sans-serif;
-// $headings-font-family: 'Playfair Display', serif;
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-cssgrid: true;
+$enable-rfs: false;
+$enable-negative-margins: true;
+
+@import "bootstrap/bootstrap-utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "row-gap": (
+      property: row-gap,
+      class: row-gap,
+      values: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer * 1,
+        4: $spacer * 1.5,
+        5: $spacer * 2,
+      ),
+	),
+	"column-gap": (
+      property: column-gap,
+      class: column-gap,
+      values: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer * 1,
+        4: $spacer * 1.5,
+        5: $spacer * 2,
+      ),
+	),
+	"opacity": (
+      property: opacity,
+      class: opacity,
+      values: (
+        0: 0%,
+        20: 20%,
+        40: 40%,
+        60: 60%,
+        80: 80%,
+        100: 100%,
+      ),
+	),
+	"css-columns": (
+      property: columns,
+      class: css-columns,
+	  responsive: true,
+      values: 2 3 4 6,
+    ),
+    "border": (
+      property: border,
+	  responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-style": (
+      property: border-style,
+      values: (
+        dotted: dotted,
+        dashed: dashed,
+        solid: solid,
+      )
+    ),
+    "border-top": (
+      property: border-top,
+	  responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-end": (
+      property: border-right,
+	  responsive: true,
+      class: border-end,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-bottom": (
+      property: border-bottom,
+	  responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-start": (
+      property: border-left,
+	  responsive: true,
+      class: border-start,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "overflow-x": (
+      property: overflow-x,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-y": (
+      property: overflow-y,
+      values: auto hidden visible scroll,
+    ),
+  )
+);
+
 @import "bootstrap/bootstrap";
 
+/* Custom CSS rules come here */
 // Material design icons CSS
 .mdi {
     display: inline-block;
@@ -65,7 +169,7 @@ $primary: #2185d0;
     }
 }
 
-/* Custom CSS rules come here */
+// overflow
 /* Pinegrow generated Additional Rules Begin */
 body,
 html {
