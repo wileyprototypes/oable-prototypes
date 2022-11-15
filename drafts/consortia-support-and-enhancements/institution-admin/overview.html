@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-pgc-master="dashboard.html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="../../../style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
+    </head>
+    <body>
+        <div data-pg-name="App" style="padding-left: 190px;">
+            <div class="border-end offcanvas offcanvas-start show" data-bs-scroll="true" id="appMenu" style="width: 190px;" data-bs-backdrop="false" tabindex="-1" data-pg-name="App menu">
+                <div class="offcanvas-header px-4">
+                    <img src="../../../assets/images/logos/oable-color.svg" class="img-fluid w-100"/>
+                </div>
+                <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
+                    <nav>
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        </div>
+                    </nav>
+                    <nav class="border-top">
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">University of Bath</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div data-pg-name="App body" id="appBody" class="py-5">
+                <div class="container-fluid px-5" data-pgc-field="appBody-container">
+                    <header class="mb-5" data-pgc="viewHeader">
+                        <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
+                        <section data-pg-name="filters">
+                            <div class="g-2 row">
+                                <div class="col-auto" data-pgc-field="filterPublisher">
+                                    <div class="input-group input-group-sm">
+                                        <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
+                                        <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
+                                            <option selected value="1">Wiley</option>
+                                            <option value="2">Taylor & Francis</option>
+                                            <option value="3">Elsevier</option>
+                                            <option value="3">ACS</option>
+                                            <option value="3">Springer Nature</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filterDateRange">
+                                    <div class="input-group input-group-sm">
+                                        <label class="input-group-text" for="inputGroupSelectDate">Date range</label>
+                                        <select class="border form-select" id="inputGroupSelectDate" style="max-width: 150px;">
+                                            <option selected value="1">Year to date</option>
+                                            <option value="2">Previous 7 Days</option>
+                                            <option value="3">Select month</option>
+                                            <option value="3">Select year</option>
+                                            <option value="3">All history</option>
+                                            <option value="3">Custom date range</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto" data-pgc-field="filter">
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </header>
+                    <main>
+                        <div class="g-5 row">
+                            <div class="col-md-7 col-xl-7">
+                                <div class="card d-flex h-100 text-center">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <h2 class="card-title h4">Total Requests</h2>
+                                        <p class="fs-1 fw-bold">73</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Pending</a></h3>
+                                                <p class="fs-4 fw-bold">12</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Approved</a></h3>
+                                                <p class="fs-4 fw-bold">51</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Denied</a></h3>
+                                                <p class="fs-4 fw-bold">4</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Cancelled</a></h3>
+                                                <p class="fs-4 fw-bold">6</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-5">
+                                <div class="card d-flex h-100 text-center">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <h2 class="card-title h4">Total Spend</h2>
+                                        <p>All  agreements</p>
+                                        <div class="mt-auto row">
+                                            <div class="col">
+                                                <h3 class="h6">Gold Open Access</h3>
+                                                <p class="fs-4 fw-bold">$123,456<br/><span class="badge bg-secondary">USD</span></p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6">Hybrid Open Access</h3>
+                                                <p class="fs-4 fw-bold">51<br/><span class="badge bg-secondary">Articles</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card">
+                                    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
+                                </script>
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Request throughput</h2>
+                                        <div id="chart"></div>
+                                        <script src="../../../assets/js/charts.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Active Agreements</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="input-group input-group-sm" style="max-width: 250px;">
+                                                <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Agreement name"/>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
+                                                    <span class="mdi mdi-18px mdi-magnify"></span>
+                                                </button>
+                                            </div>
+                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">2 agreements</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-4 table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Agreement&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Publisher&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Journal group&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Linked accounts&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Total Spent&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Balance&nbsp;<strong>⭥</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">Wiley-JISC gold                                                            2022</a></th>
+                                                        <td class="align-middle">Wiley</td>
+                                                        <td class="align-middle">Gold Open Access</td>
+                                                        <td class="align-middle"><a href="#">??</a></td>
+                                                        <td class="align-middle"><a href="#">12</a></td>
+                                                        <td class="align-middle">$23,234</td>
+                                                        <td class="align-middle">$45,567</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">Wiley-JISC hybrid                                                            2022</a></th>
+                                                        <td class="align-middle">Wiley</td>
+                                                        <td class="align-middle">Hybrid Open Access</td>
+                                                        <td class="align-middle"><a href="#">??</a></td>
+                                                        <td class="align-middle"><a href="#">257</a></td>
+                                                        <td class="align-middle">257 articles</td>
+                                                        <td class="align-middle">52 articles</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">Wiley-PREPAY general                                                            2022</a></th>
+                                                        <td class="align-middle">Wiley</td>
+                                                        <td class="align-middle">All</td>
+                                                        <td class="align-middle"><a href="#">1</a></td>
+                                                        <td class="align-middle"><a href="#">2</a></td>
+                                                        <td class="align-middle">$3,234</td> 
+                                                        <td class="align-middle">N/A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">T&amp;F-PREPAY general                                                            2022</a></th>
+                                                        <td class="align-middle">Taylor &amp; Francis</td>
+                                                        <td class="align-middle">All</td>
+                                                        <td class="align-middle"><a href="#">1</a></td>
+                                                        <td class="align-middle"><a href="#">4</a></td>
+                                                        <td class="align-middle">$3,234</td>
+                                                        <td class="align-middle">N/A</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 agreements</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Active Accounts</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="input-group input-group-sm" style="max-width: 250px;">
+                                                <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Account name"/>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
+                                                </button>
+                                            </div>
+                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">3 accounts</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-4 table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Account name&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Connected Agreement(s)&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Pending Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Total Spent&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Balance&nbsp;<strong>⭥</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">Wiley-JISC Bath gold 2022</a></th>
+                                                        <td class="align-middle"><a href="#">Wiley-JISC gold 2022</a></td>
+                                                        <td class="align-middle"><a href="#">12</a></td>
+                                                        <td class="align-middle"><a href="#">42</a></td>
+                                                        <td class="align-middle">$23,234</td>
+                                                        <td class="align-middle">N/A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">Wiley-JISC Bath hybrid 2022</a></th>
+                                                        <td class="align-middle"><a href="#">Wiley-JISC hybrid 2022</a></td>
+                                                        <td class="align-middle"><a href="#">2</a></td>
+                                                        <td class="align-middle"><a href="#">23</a></td>
+                                                        <td class="align-middle">$23,234</td>
+                                                        <td class="align-middle">N/A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle"><a href="#">Prepay general</a></th>
+                                                        <td class="align-middle"><a href="#">Wiley-PREPAY general 2022</a>, <a href="#">T&amp;F-PREPAY general 2022</a></td>
+                                                        <td class="align-middle"><a href="#">2</a></td>
+                                                        <td class="align-middle"><a href="#">23</a></td>
+                                                        <td class="align-middle">&pound;23,234</td>
+                                                        <td class="align-middle">&pound;45,567</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">3 accounts</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" aria-labelledby="offcanvasUXSpecLabel" data-pg-name="UX Spec" data-pgc-field="offcanvas-UXSpec"> 
+            <div class="offcanvas-header"> 
+                <h5 class="offcanvas-title" id="offcanvasUXSpecLabel">UX Specification</h5> 
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>                 
+            </div>             
+            <div class="offcanvas-body">
+                <p>This design is for illustrative purposes only.</p>
+                <section data-pgc-field="UXSpec-body"></section>
+            </div>             
+        </div>
+        <div data-pg-name="modals" data-pgc-field="modals"></div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../../../assets/js/popper.min.js"></script>
+        <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
