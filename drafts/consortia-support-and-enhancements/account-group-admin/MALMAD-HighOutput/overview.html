@@ -40,6 +40,8 @@
                         <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
+                                
+                                
                                 <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
@@ -52,6 +54,7 @@
                                         </select>
                                     </div>
                                 </div>
+                                
                                 <div class="col-auto" data-pgc-field="filterInstitution">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
@@ -79,9 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
-                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
-                                        <span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -89,110 +90,159 @@
                     </header>
                     <main>
                         <div class="g-5 row">
-                            <div class="col-md-7 col-xl-7">
-                                <div class="card d-flex h-100 text-center">
-                                    <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Requests</h2>
-                                        <p class="fs-1 fw-bold">575</p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Pending</a></h3>
-                                                <p class="fs-4 fw-bold">8</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Approved</a></h3>
-                                                <p class="fs-4 fw-bold">560</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Denied</a></h3>
-                                                <p class="fs-4 fw-bold">3</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Cancelled</a></h3>
-                                                <p class="fs-4 fw-bold">4</p>
-                                            </div>
+                            <div class="col-xl-6" data-pgc="overview-totalRequests">
+        <div class="card d-flex h-100 text-center">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h2 class="card-title h4">Total Requests</h2>
+                <p class="fs-1 fw-bold">700</p>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="h6"><a href="#">Pending</a></h3>
+                        <p class="fs-4 fw-bold">12</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="h6"><a href="#">Approved</a></h3>
+                        <p class="fs-4 fw-bold">6</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="h6"><a href="#">Paid</a></h3>
+                        <p class="fs-4 fw-bold">672</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="h6"><a href="#">Denied</a></h3>
+                        <p class="fs-4 fw-bold">4</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="h6"><a href="#">Cancelled</a></h3>
+                        <p class="fs-4 fw-bold">6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                            
+                            <div class="col-xl-6">
+                                <div class="card d-flex h-100">
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js">
+                                </script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Total spent</h2>
+                                        <div id="chartJS">
+                                            <canvas id="totalSpentNormal"></canvas>
                                         </div>
+                                        <script>
+                                        // Total Spent Normal chart
+new Chart(totalSpentNormal, {
+
+    plugins: [ChartDataLabels],
+    type: 'bar',
+    data: {
+        labels: ['Articles'],
+        datasets: [
+            {
+                label: 'Hybrid Open Access',
+                data: [678],
+                backgroundColor: '#a02d8b',
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        layout: {
+            padding: 20
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            datalabels: {
+                backgroundColor: 'rgb(255 255 255 / 50%)',
+                color: '#000',
+                font: {
+                    size: 16,
+                    weight: 'bold'
+                }
+            }
+        },
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Spend (Articles)'
+                },
+                stacked: true,
+                grid: {
+                    color: 'rgb(0 179 227 / 25%)',
+                }
+            }
+        }
+    }
+});
+                                    </script>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-5 col-xl-5">
-                                <div class="card d-flex h-100 text-center">
-                                    <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Spend</h2>
-                                        <p>All <b>Wiley</b> agreements</p>
-                                        <div class="mt-auto row">
-                                            <div class="col">
-                                                <h3 class="h6">Hybrid Open Access</h3>
-                                                <p class="fs-4 fw-bold">560<br/><span class="badge bg-secondary">Articles</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
+                            </div><div class="col-12" data-pgc="overview-requestThroughput">
                                 <div class="card">
                                     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
                                 </script>
                                     <div class="card-body">
                                         <h2 class="card-title h4">Request throughput</h2>
                                         <div id="chart"></div>
-                                        <script src="../../../../assets/js/charts.js"></script>
+                                        <script src="../../../../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
+                            </div><div class="col-12" data-pgc="overview-groups">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title h4">Groups</h2>
+                <div class="d-flex justify-content-between">
+                    <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary" data-pgc-field="badgeTop">1 groups</span>
+                    </div>
+                </div>
+                <div>
+                    <table class="mt-3 table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Group&nbsp;<strong>⭥</strong></th>
+                                <th scope="col">Journal type&nbsp;<strong>⭥</strong></th>
+                                <th scope="col" class="text-end">
+                                                        Institutions&nbsp;<strong>⭥</strong></th>
+                                <th scope="col" class="text-end">Paid
+                                                        Requests&nbsp;<strong>⭥</strong></th>
+                                <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong> </th>
+                                <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="align-middle">High output</th>
+                                <td class="align-middle">Hybrid Open Access</td>
+                                <td class="align-middle text-end">10</td>
+                                <td class="align-middle text-end"><a href="#">560</a></td>
+                                <td class="align-middle text-end">560 articles</td>
+                                <td class="align-middle text-end">120 articles</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary" data-pgc-field="badgeBottom">1 groups</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div data-pgc="overview-institutions">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Account groups</h2>
+                                        <h2 class="card-title h4">Institutions</h2>
                                         <div class="d-flex justify-content-between">
                                             <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 account group</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <table class="mt-4 table table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Account group&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Journal group&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Linked accounts&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Paid Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Total Spent&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Balance&nbsp;<strong>⭥</strong></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle">High output</th>
-                                                        <td class="align-middle">Hybrid Open Access</td>
-                                                        <td class="align-middle"><a href="#">10</a></td>
-                                                        <td class="align-middle"><a href="#">560</a></td>
-                                                        <td class="align-middle">560 articles</td>
-                                                        <td class="align-middle">120 articles</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 account group</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="input-group input-group-sm" style="max-width: 250px;">
-                                                <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Account name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
-                                                    <span class="mdi mdi-18px mdi-magnify"></span>
-                                                </button>
-                                            </div>
-                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">24 accounts</span>
+                                                <span class="badge bg-secondary">24 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item"><a class="page-link" href="#">Previous</a>
@@ -210,125 +260,82 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <table class="mt-4 table table-sm">
+                                            <table class="mt-3 table table-sm">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">Account name&nbsp;<strong>⭥</strong></th>
                                                         <th scope="col">Institution&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Connected Agreement(s)&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Pending Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Paid Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Total Spent&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Balance&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Relative spend&nbsp;<strong>⭥</strong></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            AROVC</a></th>
-                                                        <td class="align-middle">Agricultural Research Organization Volcani
-                                                        Center</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">12</a></td>
-                                                        <td class="align-middle"><a href="#">42</a></td>
-                                                        <td class="align-middle">42</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Agricultural Research Organization Volcani Center</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            Ariel</a></th>
-                                                        <td class="align-middle">Ariel University</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Bar-Ilan University</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            Bar-Ilan</a></th>
-                                                        <td class="align-middle">Bar-Ilan University</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Holon Institute of Technology</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">5</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            Ben-Gurion</a></th>
-                                                        <td class="align-middle">Ben-Gurion University of the Negev</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Israel Institute for Biological Research</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            GSI</a></th>
-                                                        <td class="align-middle">Geological Survey of Israel</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Kibbutzim College of Education Technology and the Arts</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            HUJ</a></th>
-                                                        <td class="align-middle">Hebrew University of Jerusalem</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Oranim Academic College of Education</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">3</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            Holon</a></th>
-                                                        <td class="align-middle">Holon Institute of Technology</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">ORT Braude College</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">3</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            IIBR</a></th>
-                                                        <td class="align-middle">Israel Institute for Biological Research</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Sami Shamoon College of Engineering</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">7</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            KCETA</a></th>
-                                                        <td class="align-middle">Kibbutzim College of Education Technology and the Arts</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Technion Israel Institute of Technology</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">11</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-MALMAD Hybrid -
-                                                            KAC</a></th>
-                                                        <td class="align-middle">Kinneret Academic College</td>
-                                                        <td class="align-middle"><a href="#">Wiley-MALMAD hybrid 2022</a></td>
-                                                        <td class="align-middle"><a href="#">2</a></td>
-                                                        <td class="align-middle"><a href="#">23</a></td>
-                                                        <td class="align-middle">23</td>
-                                                        <td class="align-middle">N/A</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Tel-Hai College</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">24 accounts</span>
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary">24 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item"><a class="page-link" href="#">Previous</a>
@@ -348,6 +355,8 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
                         </div>
                     </main>
                 </div>

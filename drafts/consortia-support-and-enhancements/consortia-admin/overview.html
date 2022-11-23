@@ -21,11 +21,15 @@
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD</span><span class="mdi mdi-18px mdi-bank"></span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -85,7 +89,9 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
+                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
+                                        <span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -137,6 +143,32 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xl-12">
+                                <div class="card d-flex h-100">
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Total spent</h2>
+                                        <div id="chartJS">
+                                            <canvas id="totalSpentFull"></canvas>
+                                        </div>
+                                        <script type="module" src="../../../../assets/js/chartjs-test.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card d-flex h-100">
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Total spent</h2>
+                                        <div id="chartJS">
+                                            <canvas id="totalSpentNormal"></canvas>
+                                        </div>
+                                        <script type="module" src="../../../../assets/js/chartjs-test.js"></script>
+                                    </div>
+                                </div>
+                            </div>
                             <div>
                                 <div class="card">
                                     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
@@ -151,15 +183,81 @@
                             <div>
                                 <div class="card">
                                     <div class="card-body">
+                                        <h2 class="card-title h4">Groups</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 groups</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-4 table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Group&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Agreement&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Journal type&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Institutions&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle" rowspan="2">FWF</th>
+                                                        <td class="align-middle">Wiley-KEMO-FWF gold 2022</td>
+                                                        <td class="align-middle">Gold Open Access</td>
+                                                        <td class="align-middle text-end">24</td>
+                                                        <td class="align-middle text-end"><a href="#">346</a></td>
+                                                        <td class="align-middle text-end">$324,421 USD</td>
+                                                        <td class="align-middle text-end">N/A<br/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Wiley-KEMO-FWF hybrid 2022</td>
+                                                        <td class="align-middle">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">24</td>
+                                                        <td class="align-middle text-end"><a href="#">153</a></td>
+                                                        <td class="align-middle text-end">$124,421 USD</td>
+                                                        <td class="align-middle text-end">N/A<br/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="align-middle" rowspan="2">KEMO</th>
+                                                        <td class="align-middle">Wiley-KEMO-FWF gold 2022</td>
+                                                        <td class="align-middle">Gold Open Access</td>
+                                                        <td class="align-middle text-end">24</td>
+                                                        <td class="align-middle text-end"><a href="#">249</a></td>
+                                                        <td class="align-middle text-end">$354,311 USD</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Wiley-KEMO-FWF hybrid 2022</td>
+                                                        <td class="align-middle">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">24</td>
+                                                        <td class="align-middle text-end"><a href="#">64</a></td>
+                                                        <td class="align-middle text-end">$54,311 USD</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 groups</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
                                         <h2 class="card-title h4">Active Agreements</h2>
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Agreement name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
+                                                    <span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
-                                            <div class="align-items-center d-flex">
-                                                <span class="badge bg-secondary">2 agreements</span>
+                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">2 agreements</span>
                                             </div>
                                         </div>
                                         <div>
@@ -197,8 +295,7 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">2 agreements</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 agreements</span>
                                             </div>
                                         </div>
                                     </div>
@@ -211,11 +308,11 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Group name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
+                                                    <span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
-                                            <div class="align-items-center d-flex">
-                                                <span class="badge bg-secondary">2 account groups</span>
+                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">2 account groups</span>
                                             </div>
                                         </div>
                                         <div>
@@ -265,8 +362,7 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">2 account groups</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 account groups</span>
                                             </div>
                                         </div>
                                     </div>
@@ -279,23 +375,26 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Account name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
-                                                    <span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
-                                            <div class="align-items-center d-flex">
-                                                <span class="badge bg-secondary">48 accounts</span>
+                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">48 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
-                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Previous</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">1</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">2</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">3</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
                                                         </li>                                                         
                                                     </ul>                                                     
                                                 </nav>
@@ -420,8 +519,139 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">48 accounts</span>
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Previous</a>
+                                                        </li>                                                         
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">1</a>
+                                                        </li>                                                         
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>                                                         
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">3</a>
+                                                        </li>                                                         
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Institutions</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="input-group input-group-sm" style="max-width: 340px;">
+                                                <label class="input-group-text" for="searchInstitution">Search for institution</label>
+                                                <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Institution name" name="searchInstitution"/>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
+                                                    <span class="mdi mdi-18px mdi-magnify"></span>
+                                                </button>
+                                            </div>
+                                            <div class="align-items-center d-flex">
+                                                <span class="badge bg-secondary">24 accounts</span>
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-4 table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Institution&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="align-middle" rowspan="3">Agricultural Research Organization Volcani
+                                                        Center</td>
+                                                        <td class="align-middle text-end" rowspan="3"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" rowspan="3"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end text-nowrap">42 articles<br/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle text-end text-nowrap">$5,678 USD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle text-end text-nowrap">&pound;56,789 GBP</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Ariel University</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Bar-Ilan University</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Ben-Gurion University of the Negev</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Geological Survey of Israel</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Hebrew University of Jerusalem</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Holon Institute of Technology</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Israel Institute for Biological Research</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Kibbutzim College of Education Technology and the Arts</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">23</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
                                             <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">48 accounts</span>
+                                                <span class="badge bg-secondary">24 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item"><a class="page-link" href="#">Previous</a>
