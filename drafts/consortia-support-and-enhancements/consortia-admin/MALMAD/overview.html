@@ -309,28 +309,26 @@ new Chart(totalSpentNormal, {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
+                            </div><div data-pgc="overview-institutions">
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Institutions</h2>
                                         <div class="d-flex justify-content-between">
-                                            
                                             <div class="align-items-center d-flex ms-auto">
                                                 <span class="badge bg-secondary">24 accounts</span>
-                                                <nav class="ms-3">
-                                                    <ul class="mb-0 pagination pagination-sm">
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item"><a class="page-link" href="#">Previous</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">1</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">2</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">3</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">Next</a>
-                                                        </li>
-                                                    </ul>
+                                                        </li>                                                         
+                                                    </ul>                                                     
                                                 </nav>
                                             </div>
                                         </div>
@@ -339,69 +337,71 @@ new Chart(totalSpentNormal, {
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">Institution&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Pending
-                                                        Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Paid
-                                                        Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong> </th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Relative spend&nbsp;<strong>⭥</strong></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="align-middle">Agricultural Research Organization Volcani
-                                                        Center</td>
-                                                        <td class="align-middle text-end"><a href="#">12</a></td>
-                                                        <td class="align-middle text-end"><a href="#">42</a></td>
-                                                        <td class="align-middle text-end">42 articles<br/></td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Agricultural Research Organization Volcani Center</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Ariel University</td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">23</a></td>
-                                                        <td class="align-middle text-end">23 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Ariel University</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Bar-Ilan University</td>
-                                                        <td class="align-middle text-end"><a href="#">1</a></td>
-                                                        <td class="align-middle text-end"><a href="#">32</a></td>
-                                                        <td class="align-middle text-end">32 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Bar-Ilan University</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Ben-Gurion University of the Negev</td>
-                                                        <td class="align-middle text-end"><a href="#">0</a></td>
-                                                        <td class="align-middle text-end"><a href="#">12</a></td>
-                                                        <td class="align-middle text-end">12 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Ben-Gurion University of the Negev</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Geological Survey of Israel</td>
-                                                        <td class="align-middle text-end"><a href="#">6</a></td>
-                                                        <td class="align-middle text-end"><a href="#">6</a></td>
-                                                        <td class="align-middle text-end">6 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Geological Survey of Israel</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Hebrew University of Jerusalem</td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end">2 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Hebrew University of Jerusalem</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Holon Institute of Technology</td>
-                                                        <td class="align-middle text-end"><a href="#">0</a></td>
-                                                        <td class="align-middle text-end"><a href="#">25</a></td>
-                                                        <td class="align-middle text-end">25 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Holon Institute of Technology</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Israel Institute for Biological Research </td>
-                                                        <td class="align-middle text-end"><a href="#">0</a></td>
-                                                        <td class="align-middle text-end"><a href="#">17</a></td>
-                                                        <td class="align-middle text-end">17 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Israel Institute for Biological Research</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Kibbutzim College of Education Technology
-                                                        and the Arts</td>
-                                                        <td class="align-middle text-end"><a href="#">1</a></td>
-                                                        <td class="align-middle text-end"><a href="#">19</a></td>
-                                                        <td class="align-middle text-end">19 articles</td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Kibbutzim College of Education Technology and the Arts</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Kinneret Academic College</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -409,25 +409,26 @@ new Chart(totalSpentNormal, {
                                         <div class="d-flex justify-content-between">
                                             <div class="align-items-center d-flex ms-auto">
                                                 <span class="badge bg-secondary">24 accounts</span>
-                                                <nav class="ms-3">
-                                                    <ul class="mb-0 pagination pagination-sm">
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item"><a class="page-link" href="#">Previous</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">1</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">2</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">3</a>
-                                                        </li>
+                                                        </li>                                                         
                                                         <li class="page-item"><a class="page-link" href="#">Next</a>
-                                                        </li>
-                                                    </ul>
+                                                        </li>                                                         
+                                                    </ul>                                                     
                                                 </nav>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </main>
                 </div>
