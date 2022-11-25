@@ -40,6 +40,8 @@
                         <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
+                                
+                                
                                 <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
@@ -52,6 +54,7 @@
                                         </select>
                                     </div>
                                 </div>
+                                
                                 <div class="col-auto" data-pgc-field="filterInstitution">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
@@ -79,9 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
-                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
-                                        <span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -372,6 +373,16 @@
                     </main>
                 </div>
             </div>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" aria-labelledby="offcanvasUXSpecLabel" data-pg-name="UX Spec" data-pgc-field="offcanvas-UXSpec"> 
+            <div class="offcanvas-header"> 
+                <h5 class="offcanvas-title" id="offcanvasUXSpecLabel">UX Specification</h5> 
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>                 
+            </div>             
+            <div class="offcanvas-body">
+                <p>This design is for illustrative purposes only.</p>
+                <section data-pgc-field="UXSpec-body"></section>
+            </div>             
         </div>
         <div data-pg-name="modals" data-pgc-field="modals"></div>
         <!-- Bootstrap core JavaScript
