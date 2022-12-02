@@ -21,14 +21,14 @@
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="agreements.html" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="accounts.html" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../null" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
+                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
                             <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
                             <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">BIBSAM</span><span class="mdi mdi-18px mdi-bank"></span></a>
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">KEMO-FWF<br/><span class="fw-normal">FWF</span></span><span class="mdi mdi-18px mdi-bank"></span></a>
                             <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
@@ -67,15 +67,6 @@
                                             <option value="3">Geological Survey of Israel</option>
                                         </select>
                                     </div>
-                                </div><div class="col-auto" data-pgc-field="filterJournalType">
-                                    <div class="input-group input-group-sm">
-                                        <label class="input-group-text" for="inputGroupJournalType">Journal revenue model</label>
-                                        <select class="border form-select" id="inputGroupJournalType" style="max-width: 150px;">
-                                            <option selected value="1">All</option>
-                                            <option value="2">Gold Open Access</option>
-                                            <option value="3">Hybrid Open Access</option>
-                                        </select>
-                                    </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filterDateRange">
                                     <div class="input-group input-group-sm">
@@ -103,7 +94,7 @@
         <div class="card d-flex h-100 text-center">
             <div class="card-body d-flex flex-column justify-content-center">
                 <h2 class="card-title h4">Total Requests</h2>
-                <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">360</p>
+                <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
                 <div class="row">
                     <div class="col">
                         <h3 class="h6"><a href="#">Pending</a></h3>
@@ -115,7 +106,7 @@
                     </div>
                     <div class="col">
                         <h3 class="h6"><a href="#">Paid</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">332</p>
+                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">672</p>
                     </div>
                     <div class="col">
                         <h3 class="h6"><a href="#">Denied</a></h3>
@@ -129,20 +120,7 @@
             </div>
         </div>
     </div>
-                            <div class="col-md-5 col-xl-5 d-none">
-                                <div class="card d-flex h-100 text-center" title="Total number of paid requests moving through accounts directly affiliated with the Wiley-MALMAD agreement">
-                                    <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Spend</h2>
-                                        <p>All <b>Wiley</b> agreements</p>
-                                        <div class="mt-auto row">
-                                            <div class="col">
-                                                <h3 class="h6">Hybrid Open Access</h3>
-                                                <p class="fs-4 fw-bold">678<br/><span class="badge bg-secondary">Articles</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="col-xl-6">
                                 <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js">
@@ -160,25 +138,16 @@ new Chart(totalSpentNormal, {
     plugins: [ChartDataLabels],
     type: 'bar',
     data: {
-        labels: ['EUR', 'Articles'],
+        labels: ['Articles'],
         datasets: [
             {
-                label: 'Gold Open Access',
-                data: [243567, null],
-                yAxisID: 'y',
-                backgroundColor: '#00b3e3',
-            },
-            {
                 label: 'Hybrid Open Access',
-                data: [null, 678],
-                yAxisID: 'y1',
+                data: [678],
                 backgroundColor: '#a02d8b',
             }
         ]
     },
     options: {
-        
-             spanGaps: true,
         responsive: true,
         layout: {
             padding: 20
@@ -203,25 +172,12 @@ new Chart(totalSpentNormal, {
             y: {
                 title: {
                     display: true,
-                    text: 'Currency'
+                    text: 'Spend (Articles)'
                 },
                 stacked: true,
                 grid: {
                     color: 'rgb(0 179 227 / 25%)',
                 }
-            },
-            y1: {
-                title: {
-                    display: true,
-                    text: 'Article units'
-                },
-                stacked: true,
-                position: 'right',
-                grid: {
-                    drawOnChartArea: false,
-                    color: 'rgb(232 21 192 / 25%)',
-                }
-
             }
         }
     }
@@ -239,61 +195,53 @@ new Chart(totalSpentNormal, {
                                         <script src="../../../../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
-                            </div>
+                            </div><div class="col-12" data-pgc="overview-groups">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title h4">Groups</h2>
+                <div class="d-flex justify-content-between">
+                    <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary" data-pgc-field="badgeTop">1 groups</span>
+                    </div>
+                </div>
+                <div>
+                    <table class="mt-3 table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Group&nbsp;<strong>⭥</strong></th>
+                                <th scope="col">Journal type&nbsp;<strong>⭥</strong></th>
+                                <th scope="col" class="text-end">
+                                                        Institutions&nbsp;<strong>⭥</strong></th>
+                                <th scope="col" class="text-end">Paid
+                                                        Requests&nbsp;<strong>⭥</strong></th>
+                                <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong> </th>
+                                <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-pgc-field="row-group">
+                                <th scope="row" class="align-middle" data-pgc-field="cell-group">FWF</th>
+                                <td class="align-middle" data-pgc-field="cell-group">Hybrid Open Access</td>
+                                <td class="align-middle text-end" data-pgc-field="cell-group">24</td>
+                                <td class="align-middle text-end" data-pgc-field="cell-group"><a href="#">560</a></td>
+                                <td class="align-middle text-end" data-pgc-field="cell-group">560 articles</td>
+                                <td class="align-middle text-end" data-pgc-field="cell-group">N/A</td>
+                            </tr>
                             
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Active Agreements</h2>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive-xl">
-                                            <table class="mt-3 small table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Agreement&nbsp;⭥</th>
-                                                        <th scope="col">Journal revenue model&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Institutions&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Pending Requests&nbsp;⭥</th><th scope="col" class="text-end">Paid Requests&nbsp;⭥</th><th scope="col" class="text-end">Planned transactions&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Total spend&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Balance&nbsp;⭥</th><th scope="col" class="text-center">Currency&nbsp;⭥</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-BIBSAM Gold 2022</a></th>
-                                                        <td class="align-middle">Gold Open Access</td>
-                                                        <td class="align-middle text-end">45</td>
-                                                        <td class="align-middle text-end"><a href="#">4</a></td>
-                                                        <td class="align-middle text-end"><a href="#">354</a></td>
-                                                        <td class="align-middle text-end">34,465</td><td class="align-middle text-end">2,645,673</td><td class="align-middle text-end">5,643,346</td><td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                    </tr><tr>
-                                                        <th scope="row" class="align-middle"><a href="#">Wiley-BIBSAM Hybrid 2022</a></th>
-                                                        <td class="align-middle">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">45</td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">673</a></td>
-                                                        <td class="align-middle text-end">65</td><td class="align-middle text-end">673</td><td class="align-middle text-end">346</td><td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary" data-pgc-field="badgeBottom">1 groups</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div data-pgc="overview-institutions">
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Institutions</h2>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">151 institutions</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">24 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item">
@@ -316,75 +264,80 @@ new Chart(totalSpentNormal, {
                                             </div>
                                         </div>
                                         <div>
-                                            <table class="mt-3 small table">
+                                            <table class="mt-3 table table-sm">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">Institution&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Pending Requests&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Paid Requests&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Relative spend&nbsp;⭥</th>
+                                                        <th scope="col">Institution&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Relative spend&nbsp;<strong>⭥</strong></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="align-middle">Aberystwyth University</td>
-                                                        <td class="align-middle text-end"><a href="#">12</a></td>
-                                                        <td class="align-middle text-end"><a href="#">42</a></td>
-                                                        <td class="align-middle text-end">25%<br/></td>
+                                                    <tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Alpen-Adria-Universität Klagenfurt (University of Klagenfurt)</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Central European University</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Donau-Universität Krems (Danube University Krems)</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">5</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Fachhochschule Oberösterreich (University of Applied Sciences Upper Austria)</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Forschungsinstitut für Molekulare Pathologie GmbH (Research Institute of Molecular Pathology)</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Oranim Academic College of Education</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">3</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">ORT Braude College</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">3</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Sami Shamoon College of Engineering</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">7</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Technion Israel Institute of Technology</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">11</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
+                                                    </tr><tr data-pgc-field="row-institution">
+                                                        <td class="align-middle" data-pgc-field="cell-institution">Tel-Hai College</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Anglia Ruskin University</td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">23</a></td>
-                                                        <td class="align-middle text-end">12.5%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Aston University</td>
-                                                        <td class="align-middle text-end"><a href="#">1</a></td>
-                                                        <td class="align-middle text-end"><a href="#">32</a></td>
-                                                        <td class="align-middle text-end">18%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Babraham Institute</td>
-                                                        <td class="align-middle text-end"><a href="#">0</a></td>
-                                                        <td class="align-middle text-end"><a href="#">12</a></td>
-                                                        <td class="align-middle text-end">6%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Bangor University</td>
-                                                        <td class="align-middle text-end"><a href="#">6</a></td>
-                                                        <td class="align-middle text-end"><a href="#">6</a></td>
-                                                        <td class="align-middle text-end">3%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Bath Spa University</td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end">1%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Birmingham City University</td>
-                                                        <td class="align-middle text-end"><a href="#">0</a></td>
-                                                        <td class="align-middle text-end"><a href="#">25</a></td>
-                                                        <td class="align-middle text-end">12.6%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Bishop Grosseteste University</td>
-                                                        <td class="align-middle text-end"><a href="#">0</a></td>
-                                                        <td class="align-middle text-end"><a href="#">17</a></td>
-                                                        <td class="align-middle text-end">7.5%</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle">Bournemouth University</td>
-                                                        <td class="align-middle text-end"><a href="#">1</a></td>
-                                                        <td class="align-middle text-end"><a href="#">19</a></td>
-                                                        <td class="align-middle text-end">8%</td>
-                                                    </tr>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">151 institutions</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">24 accounts</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
                                                         <li class="page-item">
@@ -409,6 +362,8 @@ new Chart(totalSpentNormal, {
                                     </div>
                                 </div>
                             </div>
+                            
+                            
                         </div>
                     </main>
                 </div>
@@ -422,13 +377,10 @@ new Chart(totalSpentNormal, {
             <div class="offcanvas-body">
                 <p>This design is for illustrative purposes only.</p>
                 <section data-pgc-field="UXSpec-body">
-                    <p>Design for <b>parent consortia</b>, or <b>normal consortia admin</b>. Using <b>JISC</b> as an example.</p>
-                    <ul>
-                        <li>151 Institutions</li>
-                        
-                        <li>The agreement covers <b>Hybrid and Gold</b> journals</li>
-                        <li>The draw down mechanism for both parts is a shared GBP balance</li>
-                    </ul>
+                    <p>Design for a consortia group admin (child consortium, other group of institutions, or other factor). Using <b>MALMAD</b> as an example.</p>
+                    <p>MALMAD splits their institutions into 2 groups, high and low output.</p><p>A MALMAD high output group admin should see only the data for requests moving through the institutions within the high output group.</p>
+                    
+                    
                 </section>
             </div>             
         </div>

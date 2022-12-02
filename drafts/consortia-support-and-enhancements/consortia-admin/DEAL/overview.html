@@ -8,28 +8,24 @@
         <meta name="author" content=""/>
         <title>Blank Template for Bootstrap</title>
         <!-- Bootstrap core CSS -->
-        <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
-        <link href="../../../style.css" rel="stylesheet"/>
+        <link href="../../../../style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
     </head>
     <body>
         <div data-pg-name="App" style="padding-left: 190px;">
             <div class="border-end offcanvas offcanvas-start show" data-bs-scroll="true" id="appMenu" style="width: 190px;" data-bs-backdrop="false" tabindex="-1" data-pg-name="App menu">
                 <div class="offcanvas-header px-4">
-                    <img src="../../../assets/images/logos/oable-color.svg" class="img-fluid w-100"/>
+                    <img src="../../../../assets/images/logos/oable-color.svg" class="img-fluid w-100"/>
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="agreements.html" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="accounts.html" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD</span><span class="mdi mdi-18px mdi-bank"></span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">KEMÖ-FWF</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -75,16 +71,6 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto" data-pgc-field="filterJournalType">
-                                    <div class="input-group input-group-sm">
-                                        <label class="input-group-text" for="inputGroupJournalType">Journal revenue model</label>
-                                        <select class="border form-select" id="inputGroupJournalType" style="max-width: 150px;">
-                                            <option selected value="1">All</option>
-                                            <option value="2">Gold Open Access</option>
-                                            <option value="3">Hybrid Open Access</option>
-                                        </select>
-                                    </div>
-                                </div>
                                 <div class="col-auto" data-pgc-field="filterDateRange">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectDate">Date range</label>
@@ -99,7 +85,9 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
+                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
+                                        <span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -137,16 +125,97 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-5 col-xl-5 d-none">
+                                <div class="card d-flex h-100 text-center" title="Total number of paid requests moving through accounts directly affiliated with the Wiley-MALMAD agreement">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <h2 class="card-title h4">Total Spend</h2>
+                                        <p>All <b>Wiley</b> agreements</p>
+                                        <div class="mt-auto row">
+                                            <div class="col">
+                                                <h3 class="h6">Hybrid Open Access</h3>
+                                                <p class="fs-4 fw-bold">678<br/><span class="badge bg-secondary">Articles</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-xl-6">
                                 <div class="card d-flex h-100">
-                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js">
+                                </script>
                                     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
                                     <div class="card-body">
                                         <h2 class="card-title h4">Total spent</h2>
                                         <div id="chartJS">
-                                            <canvas id="totalSpentFull"></canvas>
+                                            <canvas id="totalSpentNormal"></canvas>
                                         </div>
-                                        <script type="module" src="../../../../assets/js/chartjs-test.js"></script>
+                                        <script>
+                                        // Total Spent Normal chart
+new Chart(totalSpentNormal, {
+
+    plugins: [ChartDataLabels],
+    type: 'bar',
+    data: {
+        labels: ['USD'],
+        datasets: [
+            {
+                label: 'Hybrid Open Access',
+                data: [678732],
+                backgroundColor: '#3e39ff',
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        layout: {
+            padding: 20
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            datalabels: {
+                backgroundColor: 'rgb(255 255 255 / 50%)',
+                color: '#000',
+                font: {
+                    size: 16,
+                    weight: 'bold'
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.dataset.label || '';
+
+                        if (label) {
+                            label += ': ';
+                        }
+                        if (context.parsed.y !== null) {
+                            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                        }
+                        return label;
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Spend (Currency)'
+                },
+                stacked: true,
+                grid: {
+                    color: 'rgb(0 179 227 / 25%)',
+                }
+            }
+        }
+    }
+});
+                                    </script>
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +226,7 @@
                                     <div class="card-body">
                                         <h2 class="card-title h4">Request throughput</h2>
                                         <div id="chart"></div>
-                                        <script src="../../../../assets/js/charts.js"></script>
+                                        <script src="../../../../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
                             </div>
@@ -165,135 +234,8 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info">
-                                            <b>NOTES: VSNU (Netherlands)</b>
-                                            <p>There is an extra account that is shared between 2 institutions. See how there are 15 institutions and 16 accounts</p>
-                                            <p>This agreement is unlimited</p>
-                                        </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive-xl">
-                                            <table class="my-3 small table"> 
-                                                <tbody> 
-                                                    <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
-                                                        <th scope="col" class="align-bottom">Group</th>
-                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Pending requests</th>
-                                                        <th scope="col" class="align-bottom text-end"># Paid requests</th>
-                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
-                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
-                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
-                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
-                                                    </tr>
-                                                    <tr> 
-                                                        <th scope="row" class="align-middle">Wiley-VSNU</th>
-                                                        <td class="align-middle">N/A</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">15</td>
-                                                        <td class="align-middle text-end">16</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">1,345,356</td>
-                                                        <td class="align-middle text-end">22,453</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                    </tr>                                                     
-                                                </tbody>                                                 
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info"><b>NOTES: KEMO/FWF (Austria)</b>
-                                            <p>This agreement is unlimited</p>
-                                            <p>Each institution has 2 accounts. One is managed by FWF admins, the others are self administered. Consortia admin sees all.</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive-xl">
-                                            <table class="my-3 small table"> 
-                                                <tbody> 
-                                                    <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
-                                                        <th scope="col" class="align-bottom">Group</th>
-                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Pending requests</th>
-                                                        <th scope="col" class="align-bottom text-end"># Paid requests</th>
-                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
-                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
-                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
-                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
-                                                    </tr>
-                                                    <tr> 
-                                                        <th scope="row" class="align-middle" rowspan="2">Wiley-KEMO/FWF</th>
-                                                        <td class="align-middle">FWF</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">31</td>
-                                                        <td class="align-middle text-end">31</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">1,345,356</td>
-                                                        <td class="align-middle text-end">22,453</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                    </tr>                                                     
-                                                    <tr> 
-                                                        <td class="align-middle">Self-administrated</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">31</td>
-                                                        <td class="align-middle text-end">31</td> 
-                                                        <td class="align-middle text-end"><a href="">17</a></td>
-                                                        <td class="align-middle text-end"><a href="">157</a></td>
-                                                        <td class="align-middle text-end">945,356</td>
-                                                        <td class="align-middle text-end">12,453</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td> 
-                                                    </tr>                                                     
-                                                </tbody>                                                 
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info">
-                                            <b>NOTES: Projekt DEAL (Germany)</b>
-                                            <p>Who knows with this one!?</p>
-                                            <p>MPDLS admins manage one group of institutions, the other group of institutions are self-administrated</p>
-                                            <p>Each institution has an account for hybrid where all prices are hidden because transactions use a PAR fee</p>
-                                            <p>Each institution also has an account for gold where prices are shown, but funds are post-pay - i.e. there is no configured limit</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                         <div class="table-responsive-xl">
@@ -325,7 +267,7 @@
                                                         <td class="align-middle text-end">N/A</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                     </tr>
-                                                    <tr> 
+                                                    <tr>                                                          
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
                                                         <td class="align-middle text-end">593</td>
                                                         <td class="align-middle text-end">593</td> 
@@ -348,7 +290,7 @@
                                                         <td class="align-middle text-end">N/A</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td> 
                                                     </tr>
-                                                    <tr> 
+                                                    <tr>                                                          
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
                                                         <td class="align-middle text-end">339</td>
                                                         <td class="align-middle text-end">339</td> 
@@ -363,8 +305,7 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                     </div>
@@ -374,14 +315,8 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info"><b>NOTES: JISC (UK)</b>
-                                            <p>All institutions are self administrated, but consortia admin can manage requests and see all.</p>
-                                            <p>Gold and hybrid drawn down from a single fund at the agreement level</p>
-                                            <p>Some institution hold their own pre-pay and credit accounts NOT VISIBLE TO CONSORTIA ADMIN</p>
-                                        </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                         <div class="table-responsive-xl">
@@ -401,24 +336,35 @@
                                                         <th scope="col" class="align-bottom text-center">Currency</th> 
                                                     </tr>
                                                     <tr> 
-                                                        <th scope="row" class="align-middle">Wiley-JISC</th>
-                                                        <td class="align-middle">N/A</td> 
-                                                        <td class="align-middle text-start">All</td>
-                                                        <td class="align-middle text-end">150</td>
-                                                        <td class="align-middle text-end">150</td> 
+                                                        <th scope="row" class="align-middle" rowspan="2">Wiley-MALMAD</th>
+                                                        <td class="align-middle">MALMAD Group A</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">8</td>
+                                                        <td class="align-middle text-end">8</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">1,345,356</td>
-                                                        <td class="align-middle text-end">345,356</td>
-                                                        <td class="align-middle text-end">4,345,356</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">GBP</span></td>
+                                                        <td class="align-middle text-end">22,453</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                    </tr>                                                     
+                                                    <tr> 
+                                                        <td class="align-middle">MALMAD Group B</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">16</td>
+                                                        <td class="align-middle text-end">16</td> 
+                                                        <td class="align-middle text-end"><a href="">17</a></td>
+                                                        <td class="align-middle text-end"><a href="">157</a></td>
+                                                        <td class="align-middle text-end">945,356</td>
+                                                        <td class="align-middle text-end">12,453</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td> 
                                                     </tr>                                                     
                                                 </tbody>                                                 
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                     </div>
@@ -428,16 +374,8 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info">
-                                            <b>NOTES: BIBSAM (Sweden)</b>
-                                            <p>All institutions are self administrated, but consortia admin can manage requests and see all.</p>
-                                            <p>Each institution has an account for hybrid using article units</p>
-                                            <p>Each institution has an account for gold using EUR</p>
-                                            <p>Both agreement parts are capped</p>
-                                        </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                         <div class="table-responsive-xl">
@@ -481,222 +419,12 @@
                                                         <td class="align-middle text-end">22,453</td>
                                                         <td class="align-middle text-end">543,263</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                    </tr>                                                     
+                                                    </tr>                                                                                                          
                                                 </tbody>                                                 
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info"><b>NOTES: CRUE (Spain)</b>
-                                            <p>All institutions are self administrated, but group admins can manage requests and see all.</p>
-                                            <p>There is a parent consortia admin role, but that person does not exist - parent consortium acts as buying club</p>
-                                            <p>Each institution has an account for hybrid using article units</p>
-                                            <p>Each institution belongs to one of the groups</p>
-                                            <p>TBC!!! Each group has an allocation/cap</p>
-                                            <p>Some institutions share the group cap on a first come, first serve basis</p>
-                                            <p>Other institutions have their own individual caps</p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive-xl">
-                                            <table class="my-3 small table"> 
-                                                <tbody> 
-                                                    <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
-                                                        <th scope="col" class="align-bottom">Group</th>
-                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Pending requests</th>
-                                                        <th scope="col" class="align-bottom text-end"># Paid requests</th>
-                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
-                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
-                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
-                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
-                                                    </tr>
-                                                    <tr> 
-                                                        <th scope="row" class="align-middle" rowspan="8">Wiley-CRUE/CSIC</th>
-                                                        <td class="align-middle">CRUE</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">5</td>
-                                                        <td class="align-middle text-end">5</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">BUCLE</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">4</td>
-                                                        <td class="align-middle text-end">4</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">CBUA</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">10</td>
-                                                        <td class="align-middle text-end">10</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">CISUG</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">3</td>
-                                                        <td class="align-middle text-end">3</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">CSUC</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">13</td>
-                                                        <td class="align-middle text-end">13</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">G-9</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">8</td>
-                                                        <td class="align-middle text-end">8</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">Madroño</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">6</td>
-                                                        <td class="align-middle text-end">6</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle">UNIRIS</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">15</td>
-                                                        <td class="align-middle text-end">15</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>                                                     
-                                                </tbody>                                                 
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
-                                        <div class="alert alert-info">
-                                            <b>NOTES</b>
-                                            <p><span>MALMAD group A (high output) institutions ALSO have ring-fenced allocations at the institution level.</span></p>
-                                            <p><span>MALMAD group B (low output) institutions are managed at the group level and all draw down on a first come first served bases from teh group cap.</span></p>
-                                            <p><span>MALMAD institutions all have their own standalone pre-pay account for GOA - not shown to consortia admin</span></p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive-xl">
-                                            <table class="my-3 small table"> 
-                                                <tbody> 
-                                                    <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
-                                                        <th scope="col" class="align-bottom">Group</th>
-                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Pending requests</th>
-                                                        <th scope="col" class="align-bottom text-end"># Paid requests</th>
-                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
-                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
-                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
-                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
-                                                    </tr>
-                                                    <tr> 
-                                                        <th scope="row" class="align-middle" rowspan="2">Wiley-MALMAD</th>
-                                                        <td class="align-middle">MALMAD Group A</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">8</td>
-                                                        <td class="align-middle text-end">8</td> 
-                                                        <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">3</td>
-                                                        <td class="align-middle text-end">154</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
-                                                    </tr>                                                     
-                                                    <tr> 
-                                                        <td class="align-middle">MALMAD Group B</td> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">16</td>
-                                                        <td class="align-middle text-end">16</td> 
-                                                        <td class="align-middle text-end"><a href="">17</a></td>
-                                                        <td class="align-middle text-end"><a href="">157</a></td>
-                                                        <td class="align-middle text-end">157</td>
-                                                        <td class="align-middle text-end">3</td>
-                                                        <td class="align-middle text-end">56</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td> 
-                                                    </tr>                                                     
-                                                </tbody>                                                 
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                     </div>
@@ -707,8 +435,7 @@
                                     <div class="card-body">
                                         <h2 class="card-title h4">Accounts</h2>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
                                             </div>
                                         </div>
                                         <div class="table-responsive-xl">
@@ -752,13 +479,387 @@
                                                         <td class="align-middle text-end">22,453</td>
                                                         <td class="align-middle text-end">560,345</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                    </tr>                                                     
+                                                    </tr>                                                                                                          
                                                 </tbody>                                                 
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Accounts</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive-xl">
+                                            <table class="my-3 small table"> 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Group</th>
+                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
+                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Pending requests</th>
+                                                        <th scope="col" class="align-bottom text-end"># Paid requests</th>
+                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
+                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
+                                                    </tr>
+                                                    <tr> 
+                                                        <th scope="row" class="align-middle" rowspan="8">Wiley-CRUE/CSIC</th>
+                                                        <td class="align-middle">CRUE</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">BUCLE</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CBUA</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CISUG</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CSUC</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">G-9</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">Madroño</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">UNIRIS</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>                                                                                                          
+                                                </tbody>                                                 
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Accounts</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive-xl">
+                                            <table class="my-3 small table"> 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Group</th>
+                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
+                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Pending requests</th>
+                                                        <th scope="col" class="align-bottom text-end"># Paid requests</th>
+                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
+                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
+                                                    </tr>
+                                                    <tr> 
+                                                        <th scope="row" class="align-middle" rowspan="8">Wiley-CRUE/CSIC</th>
+                                                        <td class="align-middle">CRUE</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">BUCLE</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CBUA</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CISUG</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CSUC</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">G-9</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">Madroño</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">UNIRIS</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">10</td>
+                                                        <td class="align-middle text-end">10</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>                                                                                                          
+                                                </tbody>                                                 
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 agreement</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Institutions</h2>
+                                        <div class="d-flex justify-content-between">
                                             <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
+                                                <span class="badge bg-secondary">24 institutions</span>
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-3 small table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Institution&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">Relative spend&nbsp;<strong>⭥</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="align-middle">Alpen-Adria-Universität Klagenfurt (University of Klagenfurt)</td>
+                                                        <td class="align-middle text-end"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end">25%<br/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Central European University</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">12.5%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Donau-Universität Krems (Danube University Krems)</td>
+                                                        <td class="align-middle text-end"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end"><a href="#">32</a></td>
+                                                        <td class="align-middle text-end">18%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Fachhochschule Oberösterreich (University of Applied Sciences Upper Austria)</td>
+                                                        <td class="align-middle text-end"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end">6%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Forschungsinstitut für Molekulare Pathologie GmbH (Research Institute of Molecular Pathology)</td>
+                                                        <td class="align-middle text-end"><a href="#">6</a></td>
+                                                        <td class="align-middle text-end"><a href="#">6</a></td>
+                                                        <td class="align-middle text-end">3%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Gregor Mendel Institute of Molecular Plant Biology GmbH</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end">1%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Institut für Molekulare Biotechnologie GmbH (Institute of Molecular Biotechnology)</td>
+                                                        <td class="align-middle text-end"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end"><a href="#">25</a></td>
+                                                        <td class="align-middle text-end">12.6%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Institute of Science and Technology Austria</td>
+                                                        <td class="align-middle text-end"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end"><a href="#">17</a></td>
+                                                        <td class="align-middle text-end">7.5%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">International Institute for Applied Systems Analysis (IIASA)</td>
+                                                        <td class="align-middle text-end"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end"><a href="#">19</a></td>
+                                                        <td class="align-middle text-end">8%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary">24 institutions</span>
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </nav>
                                             </div>
                                         </div>
                                     </div>
@@ -769,21 +870,30 @@
                 </div>
             </div>
         </div>
-        <div class="offcanvas offcanvas-top" tabindex="-1" aria-labelledby="offcanvasUXSpecLabel" data-pg-name="UX Spec" data-pgc-field="offcanvas-UXSpec"> 
+        <div class="offcanvas offcanvas-top show" tabindex="-1" aria-labelledby="offcanvasUXSpecLabel" data-pg-name="UX Spec" data-pgc-field="offcanvas-UXSpec"> 
             <div class="offcanvas-header"> 
                 <h5 class="offcanvas-title" id="offcanvasUXSpecLabel">UX Specification</h5> 
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>                 
             </div>             
             <div class="offcanvas-body">
                 <p>This design is for illustrative purposes only.</p>
-                <section data-pgc-field="UXSpec-body"></section>
+                <section data-pgc-field="UXSpec-body">
+                    <p>Design for <b>parent consortia</b>, or <b>normal consortia admin</b>. Using <b>Projekt DEAL</b> as an example.</p>
+                    <ul>
+                        <li>707 Institutions</li>
+                        <li>MPDLS representitives manage requests for some institutions, other individual institution admins manage their own</li>
+                        <li>The agreement covers <b>Hybrid and Gold</b> journals
+                        </li>
+                        <li>The draw down mechanism for the Hybrid and Gold part is a single EUR pot - with the additional caveat that Hybrid requests are charged at a standard rate and should not be visible to consortia admin</li>
+                    </ul>
+                </section>
             </div>             
         </div>
         <div data-pg-name="modals" data-pgc-field="modals"></div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../../../assets/js/popper.min.js"></script>
-        <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../../../assets/js/popper.min.js"></script>
+        <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
