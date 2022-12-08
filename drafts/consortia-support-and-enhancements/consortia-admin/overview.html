@@ -28,7 +28,7 @@
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD</span><span class="mdi mdi-18px mdi-bank"></span></a>
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">My Organization</span><span class="mdi mdi-18px mdi-bank"></span></a>
                             <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
@@ -40,15 +40,18 @@
                         <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
+                                
+                                
                                 <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
-                                            <option selected value="1">Wiley</option>
-                                            <option value="2">Taylor & Francis</option>
-                                            <option value="3">Elsevier</option>
-                                            <option value="3">ACS</option>
-                                            <option value="3">Springer Nature</option>
+                                            <option selected value="1">All</option>
+                                            <option value="2">Wiley</option>
+                                            <option value="3">Taylor & Francis</option>
+                                            <option value="4">Elsevier</option>
+                                            <option value="5" "">ACS</option>
+                                            <option value="6">Springer Nature</option>
                                         </select>
                                     </div>
                                 </div>
@@ -57,8 +60,8 @@
                                         <label class="input-group-text" for="inputGroupSelectAccountGroup">Account group</label>
                                         <select class="border form-select" id="inputGroupSelectAccountGroup" style="max-width: 150px;">
                                             <option selected value="1">All</option>
-                                            <option value="2">High output</option>
-                                            <option value="3">Low output</option>
+                                            <option value="2">MALMAD Group A</option>
+                                            <option value="3">MALMAD Group B</option>
                                         </select>
                                     </div>
                                 </div>
@@ -98,6 +101,8 @@
                                         </select>
                                     </div>
                                 </div>
+                                
+                                
                                 <div class="col-auto" data-pgc-field="filter">
                                     <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
                                     </button>
@@ -108,41 +113,88 @@
                     <main>
                         <div class="g-5 row">
                             <div class="col-xl-6" data-pgc="overview-totalRequests">
-                                <div class="card d-flex h-100 text-center">
-                                    <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Requests</h2>
-                                        <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Pending</a></h3>
-                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Approved</a></h3>
-                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Paid</a></h3>
-                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">672</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Denied</a></h3>
-                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="h6"><a href="#">Cancelled</a></h3>
-                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
-                                            </div>
+                            <div class="card d-flex h-100 text-center">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h2 class="card-title h4">Total requests</h2>
+                                    <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h3 class="h6"><a href="#">Pending</a></h3>
+                                            <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
+                                        </div>
+                                        <div class="col">
+                                            <h3 class="h6"><a href="#">Approved</a></h3>
+                                            <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
+                                        </div>
+                                        <div class="col">
+                                            <h3 class="h6"><a href="#">Paid</a></h3>
+                                            <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">672</p>
+                                        </div>
+                                        <div class="col">
+                                            <h3 class="h6"><a href="#">Denied</a></h3>
+                                            <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
+                                        </div>
+                                        <div class="col">
+                                            <h3 class="h6"><a href="#">Cancelled</a></h3>
+                                            <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                            <div class="col-xl-6" data-pgc="overview-agreementSummary">
+                            <div class="card d-flex h-100 text-center">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h2 class="card-title h4">Agreements summary</h2>
+                                    <div class="table-responsive-xxl">
+                                        <table class="my-3 small table"> 
+                                            <tbody> 
+                                                <tr> 
+                                                    <th scope="col" class="align-bottom text-start">Agreement</th>
+                                                    <th scope="col" class="align-bottom text-start">Publisher</th> 
+                                                    <th scope="col" class="align-bottom text-start">Journal revenue model</th> 
+                                                    <th scope="col" class="align-bottom text-end">Amount spent</th>
+                                                    <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                    <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                    <th scope="col" class="align-bottom text-center">Currency</th> 
+                                                </tr>
+                                                <tr data-pgc-field="agrSum-row"> 
+                                                    <th scope="row" class="align-middle text-start" data-pgc-field="agrSum-cell-name">Wiley-JISC</th>
+                                                    <td class="align-middle text-start" data-pgc-field="agrSum-cell-pub">Wiley</td>
+                                                    <td class="align-middle text-start" data-pgc-field="agrSum-cell-model">All</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-spend">1,345,356</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-planned">345,356</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-balance">4,345,356</td>
+                                                    <td class="align-middle text-center" data-pgc-field="agrSum-cell-currency"><span class="border p-1 rounded small">GBP</span></td>
+                                                </tr><tr data-pgc-field="agrSum-row"> 
+                                                    <th scope="row" class="align-middle text-start" data-pgc-field="agrSum-cell-name">T&amp;F-JISC HOA</th>
+                                                    <td class="align-middle text-start" data-pgc-field="agrSum-cell-pub">Taylor &amp; Francis</td>
+                                                    <td class="align-middle text-start" data-pgc-field="agrSum-cell-model">Hybrid Open Access</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-spend">183</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-planned">12</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-balance">1237</td>
+                                                    <td class="align-middle text-center" data-pgc-field="agrSum-cell-currency"><span class="border p-1 rounded small">pub.</span></td>
+                                                </tr><tr data-pgc-field="agrSum-row"> 
+                                                    <th scope="row" class="align-middle text-start" data-pgc-field="agrSum-cell-name">T&amp;F-JISC GOA</th>
+                                                    <td class="align-middle text-start" data-pgc-field="agrSum-cell-pub">Taylor &amp; Francis</td>
+                                                    <td class="align-middle text-start" data-pgc-field="agrSum-cell-model">Gold Open Access</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-spend">174,367</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-planned">17,346</td>
+                                                    <td class="align-middle text-end" data-pgc-field="agrSum-cell-balance">842,245</td>
+                                                    <td class="align-middle text-center" data-pgc-field="agrSum-cell-currency"><span class="border p-1 rounded small">GBP</span></td>
+                                                </tr>                                                 
+                                            </tbody>                                             
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                             <div class="col-xl-6">
                                 <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
                                     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Total spent</h2>
+                                        <h2 class="card-title h4 text-center">Total spend</h2>
                                         <div id="chartJS">
                                             <canvas id="totalSpentFull"></canvas>
                                         </div>
@@ -150,21 +202,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12" data-pgc="overview-requestThroughput">
-                                <div class="card">
-                                    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
+                            <div class="col-xl-6" data-pgc="overview-requestThroughput" data-pgc-field="overview-requestThroughput">
+                            <div class="card d-flex h-100">
+                                <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
                                 </script>
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Request throughput</h2>
-                                        <div id="chart"></div>
-                                        <script src="../../../../assets/js/charts.js"></script>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h4 text-center">New requests</h2>
+                                    <div class="align-items-center d-flex flex-grow-1">
+                                        <div id="chart" class="flex-grow-1"></div>
                                     </div>
+                                    <script src="../../../../../../assets/js/charts.js"></script>
                                 </div>
                             </div>
+                        </div>
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info">
                                             <b>NOTES: VSNU (Netherlands)</b>
                                             <p>There is an extra account that is shared between 2 institutions. See how there are 15 institutions and 16 accounts</p>
@@ -179,11 +233,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -193,14 +247,14 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle">Wiley-VSNU</th>
+                                                        <td class="align-middle">Wiley</td>
                                                         <td class="align-middle">N/A</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">15</td>
-                                                        <td class="align-middle text-end">16</td> 
+                                                        <td class="align-middle text-end">15</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">1,345,356</td>
-                                                        <td class="align-middle text-end">22,453</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">N/A</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                     </tr>                                                     
@@ -218,7 +272,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info"><b>NOTES: KEMO/FWF (Austria)</b>
                                             <p>This agreement is unlimited</p>
                                             <p>Each institution has 2 accounts. One is managed by FWF admins, the others are self administered. Consortia admin sees all.</p>
@@ -232,11 +286,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -246,26 +300,25 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle" rowspan="2">Wiley-KEMO/FWF</th>
+                                                        <td class="align-middle" rowspan="2">Wiley</td>
                                                         <td class="align-middle">FWF</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">31</td>
                                                         <td class="align-middle text-end">31</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">1,345,356</td>
-                                                        <td class="align-middle text-end">22,453</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">N/A</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                     </tr>                                                     
                                                     <tr> 
                                                         <td class="align-middle">Self-administrated</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">31</td>
                                                         <td class="align-middle text-end">31</td> 
                                                         <td class="align-middle text-end"><a href="">17</a></td>
                                                         <td class="align-middle text-end"><a href="">157</a></td>
                                                         <td class="align-middle text-end">945,356</td>
-                                                        <td class="align-middle text-end">12,453</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">N/A</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td> 
                                                     </tr>                                                     
@@ -283,7 +336,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info">
                                             <b>NOTES: Projekt DEAL (Germany)</b>
                                             <p>Who knows with this one!?</p>
@@ -300,11 +353,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -314,10 +367,10 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle" rowspan="4">Wiley-Projekt DEAL</th>
+                                                        <td class="align-middle" rowspan="4">Wiley</td>
                                                         <td class="align-middle" rowspan="2">MPDLS</td> 
                                                         <td class="align-middle text-start">Gold Open Access</td>
-                                                        <td class="align-middle text-end">593</td>
-                                                        <td class="align-middle text-end">601</td> 
+                                                        <td class="align-middle text-end">593</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">1,345,356</td>
@@ -327,7 +380,6 @@
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">593</td>
                                                         <td class="align-middle text-end">593</td> 
                                                         <td class="align-middle text-end"><a href="">3</a></td>
                                                         <td class="align-middle text-end"><a href="">159</a></td>
@@ -339,8 +391,7 @@
                                                     <tr> 
                                                         <td class="align-middle" rowspan="2">Self-administrated</td> 
                                                         <td class="align-middle text-start">Gold Open Access</td>
-                                                        <td class="align-middle text-end">339</td>
-                                                        <td class="align-middle text-end">400</td> 
+                                                        <td class="align-middle text-end">339</td> 
                                                         <td class="align-middle text-end"><a href="">17</a></td>
                                                         <td class="align-middle text-end"><a href="">157</a></td>
                                                         <td class="align-middle text-end">945,356</td>
@@ -350,7 +401,6 @@
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">339</td>
                                                         <td class="align-middle text-end">339</td> 
                                                         <td class="align-middle text-end"><a href="">12</a></td>
                                                         <td class="align-middle text-end"><a href="">126</a></td>
@@ -373,7 +423,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info"><b>NOTES: JISC (UK)</b>
                                             <p>All institutions are self administrated, but consortia admin can manage requests and see all.</p>
                                             <p>Gold and hybrid drawn down from a single fund at the agreement level</p>
@@ -388,11 +438,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -402,9 +452,9 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle">Wiley-JISC</th>
+                                                        <td scope="row" class="align-middle">Wiley</td>
                                                         <td class="align-middle">N/A</td> 
                                                         <td class="align-middle text-start">All</td>
-                                                        <td class="align-middle text-end">150</td>
                                                         <td class="align-middle text-end">150</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
@@ -427,7 +477,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info">
                                             <b>NOTES: BIBSAM (Sweden)</b>
                                             <p>All institutions are self administrated, but consortia admin can manage requests and see all.</p>
@@ -444,11 +494,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -458,22 +508,22 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle">Wiley-BIBSAM Hybrid</th>
+                                                        <td scope="row" class="align-middle">Wiley</td>
                                                         <td class="align-middle">N/A</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">48</td>
                                                         <td class="align-middle text-end">48</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">123</td>
-                                                        <td class="align-middle text-end">12</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">321</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle">Wiley-BIBSAM Gold</th>
+                                                        <td scope="row" class="align-middle">Wiley</td>
                                                         <td class="align-middle">N/A</td> 
                                                         <td class="align-middle text-start">Gold Open Access</td>
-                                                        <td class="align-middle text-end">48</td>
                                                         <td class="align-middle text-end">48</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
@@ -496,7 +546,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info"><b>NOTES: CRUE (Spain)</b>
                                             <p>All institutions are self administrated, but group admins can manage requests and see all.</p>
                                             <p>There is a parent consortia admin role, but that person does not exist - parent consortium acts as buying club</p>
@@ -515,11 +565,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -528,100 +578,104 @@
                                                         <th scope="col" class="align-bottom text-center">Currency</th> 
                                                     </tr>
                                                     <tr> 
-                                                        <th scope="row" class="align-middle" rowspan="8">Wiley-CRUE/CSIC</th>
+                                                        <th scope="row" class="align-middle" rowspan="9">Wiley-CRUE/CSIC</th>
+                                                        <td class="align-middle" rowspan="9">Wiley</td>
                                                         <td class="align-middle">CRUE</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">5</td>
                                                         <td class="align-middle text-end">5</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">115</a></td>
+                                                        <td class="align-middle text-end">115</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">BUCLE</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">4</td>
                                                         <td class="align-middle text-end">4</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">66</a></td>
+                                                        <td class="align-middle text-end">66</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">CBUA</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">10</td>
                                                         <td class="align-middle text-end">10</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">24</a></td>
+                                                        <td class="align-middle text-end">24</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">CISUG</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">3</td>
                                                         <td class="align-middle text-end">3</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">28</a></td>
+                                                        <td class="align-middle text-end">28</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">CSUC</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">13</td>
                                                         <td class="align-middle text-end">13</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">142</a></td>
+                                                        <td class="align-middle text-end">142</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">G-9</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">8</td>
                                                         <td class="align-middle text-end">8</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">24</a></td>
+                                                        <td class="align-middle text-end">24</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">Madroño</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">6</td>
                                                         <td class="align-middle text-end">6</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
-                                                        <td class="align-middle text-end"><a href="">185</a></td>
-                                                        <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end"><a href="">74</a></td>
+                                                        <td class="align-middle text-end">74</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <td class="align-middle">UNIRIS</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">15</td>
                                                         <td class="align-middle text-end">15</td> 
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">46</a></td>
+                                                        <td class="align-middle text-end">46</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">526 (s)</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td class="align-middle">CSIC</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">1</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
-                                                        <td class="align-middle text-end">526</td>
+                                                        <td class="align-middle text-end">0</td>
+                                                        <td class="align-middle text-end">378</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>                                                     
                                                 </tbody>                                                 
@@ -638,7 +692,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="alert alert-info">
                                             <b>NOTES</b>
                                             <p><span>MALMAD group A (high output) institutions ALSO have ring-fenced allocations at the institution level.</span></p>
@@ -654,11 +708,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -668,26 +722,25 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle" rowspan="2">Wiley-MALMAD</th>
+                                                        <td class="align-middle" rowspan="2">Wiley</td>
                                                         <td class="align-middle">MALMAD Group A</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">8</td>
                                                         <td class="align-middle text-end">8</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">3</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">154</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>                                                     
                                                     <tr> 
                                                         <td class="align-middle">MALMAD Group B</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">16</td>
                                                         <td class="align-middle text-end">16</td> 
                                                         <td class="align-middle text-end"><a href="">17</a></td>
                                                         <td class="align-middle text-end"><a href="">157</a></td>
                                                         <td class="align-middle text-end">157</td>
-                                                        <td class="align-middle text-end">3</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">56</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td> 
                                                     </tr>                                                     
@@ -705,7 +758,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Accounts</h2>
+                                        <h2 class="card-title h4">Agreements and groups</h2>
                                         <div class="d-flex justify-content-between">
                                             <div class="align-items-center d-flex ms-auto">
                                                 <span class="badge bg-secondary">1 agreement</span>
@@ -715,11 +768,11 @@
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
-                                                        <th scope="col" class="align-bottom">Agreement</th> 
+                                                        <th scope="col" class="align-bottom">Agreement</th>
+                                                        <th scope="col" class="align-bottom">Publisher</th> 
                                                         <th scope="col" class="align-bottom">Group</th>
                                                         <th scope="col" class="align-bottom">Journal revenue model</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
-                                                        <th scope="col" class="align-bottom text-end"># Accounts</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -729,22 +782,22 @@
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle">Wiley-IREL Hybrid</th>
+                                                        <td class="align-middle">Wiley</td>
                                                         <td class="align-middle">N/A</td> 
                                                         <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end">10</td>
                                                         <td class="align-middle text-end">10</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
                                                         <td class="align-middle text-end">185</td>
-                                                        <td class="align-middle text-end">18</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">526</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>
                                                     <tr> 
                                                         <th scope="row" class="align-middle">Wiley-IREL Gold</th>
+                                                        <td class="align-middle">Wiley</td>
                                                         <td class="align-middle">N/A</td> 
                                                         <td class="align-middle text-start">Gold Open Access</td>
-                                                        <td class="align-middle text-end">10</td>
                                                         <td class="align-middle text-end">10</td> 
                                                         <td class="align-middle text-end"><a href="">8</a></td>
                                                         <td class="align-middle text-end"><a href="">185</a></td>
@@ -759,6 +812,117 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="align-items-center d-flex ms-auto">
                                                 <span class="badge bg-secondary">1 agreement</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Institutions</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary">151 institutions</span>
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-3 small table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col">Institution&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Relative spend&nbsp;⭥</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Aberystwyth University</td>
+                                                        <td class="align-middle text-end"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end"><a href="#">42</a></td>
+                                                        <td class="align-middle text-end">25%<br/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Anglia Ruskin University</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">23</a></td>
+                                                        <td class="align-middle text-end">12.5%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Aston University</td>
+                                                        <td class="align-middle text-end"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end"><a href="#">32</a></td>
+                                                        <td class="align-middle text-end">18%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Babraham Institute</td>
+                                                        <td class="align-middle text-end"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end"><a href="#">12</a></td>
+                                                        <td class="align-middle text-end">6%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Bangor University</td>
+                                                        <td class="align-middle text-end"><a href="#">6</a></td>
+                                                        <td class="align-middle text-end"><a href="#">6</a></td>
+                                                        <td class="align-middle text-end">3%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Bath Spa University</td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end"><a href="#">2</a></td>
+                                                        <td class="align-middle text-end">1%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Birmingham City University</td>
+                                                        <td class="align-middle text-end"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end"><a href="#">25</a></td>
+                                                        <td class="align-middle text-end">12.6%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Bishop Grosseteste University</td>
+                                                        <td class="align-middle text-end"><a href="#">0</a></td>
+                                                        <td class="align-middle text-end"><a href="#">17</a></td>
+                                                        <td class="align-middle text-end">7.5%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle">Bournemouth University</td>
+                                                        <td class="align-middle text-end"><a href="#">1</a></td>
+                                                        <td class="align-middle text-end"><a href="#">19</a></td>
+                                                        <td class="align-middle text-end">8%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary">151 institutions</span>
+                                                <nav class="ms-3"> 
+                                                    <ul class="mb-0 pagination pagination-sm"> 
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>                                                         
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        </li>                                                         
+                                                    </ul>                                                     
+                                                </nav>
                                             </div>
                                         </div>
                                     </div>

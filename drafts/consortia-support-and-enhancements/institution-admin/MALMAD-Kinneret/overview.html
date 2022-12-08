@@ -21,15 +21,11 @@
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">University of Bath</span><span class="mdi mdi-18px mdi-bank"></span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">University of Bath</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -40,22 +36,19 @@
                         <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
-                                
-                                
                                 <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
-                                            <option selected value="1">Wiley</option>
-                                            <option value="2">Taylor & Francis</option>
-                                            <option value="3">Elsevier</option>
-                                            <option value="3">ACS</option>
-                                            <option value="3">Springer Nature</option>
+                                            <option selected value="1">All</option>
+                                            <option value="2">Wiley</option>
+                                            <option value="3">Taylor & Francis</option>
+                                            <option value="4">Elsevier</option>
+                                            <option value="5" "">ACS</option>
+                                            <option value="6">Springer Nature</option>
                                         </select>
                                     </div>
                                 </div>
-                                
-                                
                                 <div class="col-auto" data-pgc-field="filterDateRange">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectDate">Date range</label>
@@ -70,7 +63,9 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
+                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
+                                        <span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -166,12 +161,10 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="input-group input-group-sm" style="max-width: 250px;">
                                                 <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Account name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2">
-                                                    <span class="mdi mdi-18px mdi-magnify"></span>
+                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
                                                 </button>
                                             </div>
-                                            <div class="align-items-center d-flex">
-                                                <span class="badge bg-secondary">3 accounts</span>
+                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">3 accounts</span>
                                             </div>
                                         </div>
                                         <div>
@@ -215,8 +208,7 @@
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">3 accounts</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">3 accounts</span>
                                             </div>
                                         </div>
                                     </div>

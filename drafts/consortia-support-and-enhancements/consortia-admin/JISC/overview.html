@@ -21,15 +21,11 @@
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="agreements.html" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="accounts.html" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="agreements.html" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="accounts.html" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">JISC</span><span class="mdi mdi-18px mdi-bank"></span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">JISC</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -40,21 +36,19 @@
                         <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
-                                
-                                
                                 <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
-                                            <option selected value="1">Wiley</option>
-                                            <option value="2">Taylor & Francis</option>
-                                            <option value="3">Elsevier</option>
-                                            <option value="3">ACS</option>
-                                            <option value="3">Springer Nature</option>
+                                            <option selected value="1">All</option>
+                                            <option value="2">Wiley</option>
+                                            <option value="3">Taylor & Francis</option>
+                                            <option value="4">Elsevier</option>
+                                            <option value="5" "">ACS</option>
+                                            <option value="6">Springer Nature</option>
                                         </select>
                                     </div>
                                 </div>
-                                
                                 <div class="col-auto" data-pgc-field="filterInstitution">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
@@ -67,7 +61,8 @@
                                             <option value="3">Geological Survey of Israel</option>
                                         </select>
                                     </div>
-                                </div><div class="col-auto" data-pgc-field="filterJournalType">
+                                </div>
+                                <div class="col-auto" data-pgc-field="filterJournalType">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupJournalType">Journal revenue model</label>
                                         <select class="border form-select" id="inputGroupJournalType" style="max-width: 150px;">
@@ -91,7 +86,9 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
+                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
+                                        <span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -100,35 +97,66 @@
                     <main>
                         <div class="g-5 row">
                             <div class="col-xl-6" data-pgc="overview-totalRequests">
-        <div class="card d-flex h-100 text-center">
-            <div class="card-body d-flex flex-column justify-content-center">
-                <h2 class="card-title h4">Total Requests</h2>
-                <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">360</p>
-                <div class="row">
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Pending</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Approved</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Paid</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">332</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Denied</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Cancelled</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <div class="card d-flex h-100 text-center">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <h2 class="card-title h4">Total requests</h2>
+                                        <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">360</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Pending</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Approved</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Paid</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">332</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Denied</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Cancelled</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6" data-pgc="overview-agreementSummary">
+                                <div class="card d-flex h-100 text-center">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <h2 class="card-title h4">Agreements summary</h2>
+                                        <div class="table-responsive-xxl">
+                                            <table class="my-3 small table"> 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <th scope="col" class="align-bottom text-start">Agreement</th>
+                                                        <th scope="col" class="align-bottom text-start">Publisher</th> 
+                                                        <th scope="col" class="align-bottom text-start">Journal revenue model</th> 
+                                                        <th scope="col" class="align-bottom text-end">Amount spent</th>
+                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
+                                                    </tr>
+                                                    <tr data-pgc-field="agrSum-row"> 
+                                                        <th scope="row" class="align-middle text-start" data-pgc-field="agrSum-cell-name">Wiley-JISC</th>
+                                                        <td class="align-middle text-start" data-pgc-field="agrSum-cell-pub">Wiley</td>
+                                                        <td class="align-middle text-start" data-pgc-field="agrSum-cell-model">All</td>
+                                                        <td class="align-middle text-end" data-pgc-field="agrSum-cell-spend">1,345,356</td>
+                                                        <td class="align-middle text-end" data-pgc-field="agrSum-cell-planned">345,356</td>
+                                                        <td class="align-middle text-end" data-pgc-field="agrSum-cell-balance">4,345,356</td>
+                                                        <td class="align-middle text-center" data-pgc-field="agrSum-cell-currency"><span class="border p-1 rounded small">GBP</span></td>
+                                                    </tr>                                                     
+                                                </tbody>                                                 
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-5 col-xl-5 d-none">
                                 <div class="card d-flex h-100 text-center" title="Total number of paid requests moving through accounts directly affiliated with the Wiley-MALMAD agreement">
                                     <div class="card-body d-flex flex-column justify-content-center">
@@ -149,7 +177,7 @@
                                 </script>
                                     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Total spent</h2>
+                                        <h2 class="card-title h4 text-center">Total spent</h2>
                                         <div id="chartJS">
                                             <canvas id="totalSpentNormal"></canvas>
                                         </div>
@@ -227,18 +255,20 @@ new Chart(totalSpentNormal, {
                                     </script>
                                     </div>
                                 </div>
-                            </div><div class="col-12" data-pgc="overview-requestThroughput">
-                                <div class="card">
+                            </div>
+                            <div class="col-xl-6" data-pgc="overview-requestThroughput" data-pgc-field="overview-requestThroughput">
+                                <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
                                 </script>
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Request throughput</h2>
-                                        <div id="chart"></div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h4 text-center">New requests</h2>
+                                        <div class="align-items-center d-flex flex-grow-1">
+                                            <div id="chart" class="flex-grow-1"></div>
+                                        </div>
                                         <script src="../../../../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
@@ -254,9 +284,12 @@ new Chart(totalSpentNormal, {
                                                         <th scope="col">Agreement&nbsp;⭥</th>
                                                         <th scope="col">Journal revenue model&nbsp;⭥</th>
                                                         <th scope="col" class="text-end">Institutions&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Pending Requests&nbsp;⭥</th><th scope="col" class="text-end">Paid Requests&nbsp;⭥</th><th scope="col" class="text-end">Planned transactions&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Pending Requests&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Paid Requests&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Planned transactions&nbsp;⭥</th>
                                                         <th scope="col" class="text-end">Total spend&nbsp;⭥</th>
-                                                        <th scope="col" class="text-end">Balance&nbsp;⭥</th><th scope="col" class="text-center">Currency&nbsp;⭥</th>
+                                                        <th scope="col" class="text-end">Balance&nbsp;⭥</th>
+                                                        <th scope="col" class="text-center">Currency&nbsp;⭥</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -266,7 +299,10 @@ new Chart(totalSpentNormal, {
                                                         <td class="align-middle text-end">151</td>
                                                         <td class="align-middle text-end"><a href="#">4</a></td>
                                                         <td class="align-middle text-end"><a href="#">354</a></td>
-                                                        <td class="align-middle text-end">34,465</td><td class="align-middle text-end">2,645,673</td><td class="align-middle text-end">5,643,346</td><td class="align-middle text-center"><span class="border p-1 rounded small">GBP</span></td>
+                                                        <td class="align-middle text-end">34,465</td>
+                                                        <td class="align-middle text-end">2,645,673</td>
+                                                        <td class="align-middle text-end">5,643,346</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">GBP</span></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -278,7 +314,6 @@ new Chart(totalSpentNormal, {
                                     </div>
                                 </div>
                             </div>
-                            
                             <div>
                                 <div class="card">
                                     <div class="card-body">
@@ -416,8 +451,8 @@ new Chart(totalSpentNormal, {
                     <p>Design for <b>parent consortia</b>, or <b>normal consortia admin</b>. Using <b>JISC</b> as an example.</p>
                     <ul>
                         <li>151 Institutions</li>
-                        
-                        <li>The agreement covers <b>Hybrid and Gold</b> journals</li>
+                        <li>The agreement covers <b>Hybrid and Gold</b> journals
+                        </li>
                         <li>The draw down mechanism for both parts is a shared GBP balance</li>
                     </ul>
                 </section>

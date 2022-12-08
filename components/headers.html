@@ -21,15 +21,11 @@
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../master-pages/tasks.html" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../master-pages/requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../master-pages/tasks.html" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../master-pages/requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">My Consortium<br/><span>MALMAD</span></span><span class="mdi mdi-18px mdi-bank"></span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">My Consortium<br/><span>MALMAD</span></span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -61,15 +57,16 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-auto" data-pgc-optional="filterPublisher">
+                                <div class="col-auto" data-pgc-optional="filterPublisher" data-pgc-optional-restore>
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
-                                            <option selected value="1">Wiley</option>
-                                            <option value="2">Taylor & Francis</option>
-                                            <option value="3">Elsevier</option>
-                                            <option value="3">ACS</option>
-                                            <option value="3">Springer Nature</option>
+                                            <option selected value="1">All</option>
+                                            <option value="2">Wiley</option>
+                                            <option value="3">Taylor & Francis</option>
+                                            <option value="4">Elsevier</option>
+                                            <option value="5" "">ACS</option>
+                                            <option value="6">Springer Nature</option>
                                         </select>
                                     </div>
                                 </div>
@@ -78,8 +75,8 @@
                                         <label class="input-group-text" for="inputGroupSelectAccountGroup">Account group</label>
                                         <select class="border form-select" id="inputGroupSelectAccountGroup" style="max-width: 150px;">
                                             <option selected value="1">All</option>
-                                            <option value="2">High output</option>
-                                            <option value="3">Low output</option>
+                                            <option value="2">MALMAD Group A</option>
+                                            <option value="3">MALMAD Group B</option>
                                         </select>
                                     </div>
                                 </div>
@@ -95,7 +92,8 @@
                                             <option value="3">Geological Survey of Israel</option>
                                         </select>
                                     </div>
-                                </div><div class="col-auto" data-pgc-optional="filterJournalType">
+                                </div>
+                                <div class="col-auto" data-pgc-optional="filterJournalType">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupJournalType">Journal revenue model</label>
                                         <select class="border form-select" id="inputGroupJournalType" style="max-width: 150px;">
@@ -117,7 +115,8 @@
                                             <option value="3">Custom date range</option>
                                         </select>
                                     </div>
-                                </div><div class="col-auto" data-pgc-optional="filterApplied">
+                                </div>
+                                <div class="col-auto" data-pgc-optional="filterApplied">
                                     <div class="input-group input-group-sm">
                                         <span class="input-group-text" id=""><b>Institution:</b>&nbsp;Johannes Kepler...</span>
                                         <button class="align-items-center btn btn-secondary d-inline-flex justify-content-center" type="button" id="">
@@ -128,7 +127,8 @@
                                 <div class="col-auto" data-pgc-optional="resetFilters">
                                     <button type="button" class="align-items-center btn btn-outline-danger btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-close-thick me-1"></span><span>Reset filters</span>
                                     </button>
-                                </div><div class="col-auto" data-pgc-optional="filter">
+                                </div>
+                                <div class="col-auto" data-pgc-optional="filter">
                                     <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
                                     </button>
                                 </div>

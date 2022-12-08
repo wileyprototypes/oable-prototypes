@@ -6,11 +6,12 @@ const data = {
         {
             name: "New requests", type: "line",
             values: [25, 40, 30, 35, 8, 52, 17, 4]
-        },
-        {
-            name: "Requests paid", type: "line",
-            values: [16, 50, 10, 15, 18, 32, 27, 14]
-        }
+            }
+        // ,
+        // {
+        //     name: "Requests paid", type: "line",
+        //     values: [16, 50, 10, 15, 18, 32, 27, 14]
+        // }
     ]
 }
 

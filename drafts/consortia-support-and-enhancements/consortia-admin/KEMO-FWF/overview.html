@@ -40,11 +40,12 @@
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
-                                            <option selected value="1">Wiley</option>
-                                            <option value="2">Taylor & Francis</option>
-                                            <option value="3">Elsevier</option>
-                                            <option value="3">ACS</option>
-                                            <option value="3">Springer Nature</option>
+                                            <option selected value="1">All</option>
+                                            <option value="2">Wiley</option>
+                                            <option value="3">Taylor & Francis</option>
+                                            <option value="4">Elsevier</option>
+                                            <option value="5" "">ACS</option>
+                                            <option value="6">Springer Nature</option>
                                         </select>
                                     </div>
                                 </div>
@@ -53,8 +54,8 @@
                                         <label class="input-group-text" for="inputGroupSelectAccountGroup">Account group</label>
                                         <select class="border form-select" id="inputGroupSelectAccountGroup" style="max-width: 150px;">
                                             <option selected value="1">All</option>
-                                            <option value="2">High output</option>
-                                            <option value="3">Low output</option>
+                                            <option value="2">MALMAD Group A</option>
+                                            <option value="3">MALMAD Group B</option>
                                         </select>
                                     </div>
                                 </div>
@@ -98,7 +99,7 @@
                             <div class="col-xl-6" data-pgc="overview-totalRequests">
                                 <div class="card d-flex h-100 text-center">
                                     <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Requests</h2>
+                                        <h2 class="card-title h4">Total requests</h2>
                                         <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
                                         <div class="row">
                                             <div class="col">
@@ -125,16 +126,33 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-xl-5 d-none">
-                                <div class="card d-flex h-100 text-center" title="Total number of paid requests moving through accounts directly affiliated with the Wiley-MALMAD agreement">
+                            <div class="col-xl-6" data-pgc="overview-agreementSummary">
+                                <div class="card d-flex h-100 text-center">
                                     <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Spend</h2>
-                                        <p>All <b>Wiley</b> agreements</p>
-                                        <div class="mt-auto row">
-                                            <div class="col">
-                                                <h3 class="h6">Hybrid Open Access</h3>
-                                                <p class="fs-4 fw-bold">678<br/><span class="badge bg-secondary">Articles</span></p>
-                                            </div>
+                                        <h2 class="card-title h4">Agreements summary</h2>
+                                        <div class="table-responsive-xxl">
+                                            <table class="my-3 small table"> 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <th scope="col" class="align-bottom text-start">Agreement</th>
+                                                        <th scope="col" class="align-bottom text-start">Publisher</th> 
+                                                        <th scope="col" class="align-bottom text-start">Journal revenue model</th> 
+                                                        <th scope="col" class="align-bottom text-end">Amount spent</th>
+                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
+                                                    </tr>
+                                                    <tr data-pgc-field="agrSum-row"> 
+                                                        <th scope="row" class="align-middle text-start" data-pgc-field="agrSum-cell-name">Wiley-KEMÖ/FWF</th>
+                                                        <td class="align-middle text-start" data-pgc-field="agrSum-cell-pub">Wiley</td>
+                                                        <td class="align-middle text-start" data-pgc-field="agrSum-cell-model">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end" data-pgc-field="agrSum-cell-spend">672</td>
+                                                        <td class="align-middle text-end" data-pgc-field="agrSum-cell-planned">0</td>
+                                                        <td class="align-middle text-end" data-pgc-field="agrSum-cell-balance">515</td>
+                                                        <td class="align-middle text-center" data-pgc-field="agrSum-cell-currency"><span class="border p-1 rounded small">pub.</span></td>
+                                                    </tr>                                                     
+                                                </tbody>                                                 
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +163,7 @@
                                 </script>
                                     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
                                     <div class="card-body">
-                                        <h2 class="card-title h4">Total spent</h2>
+                                        <h2 class="card-title h4 text-center">Total spend</h2>
                                         <div id="chartJS">
                                             <canvas id="totalSpentNormal"></canvas>
                                         </div>
@@ -156,11 +174,11 @@ new Chart(totalSpentNormal, {
     plugins: [ChartDataLabels],
     type: 'bar',
     data: {
-        labels: ['USD'],
+        labels: ['Articles'],
         datasets: [
             {
                 label: 'Hybrid Open Access',
-                data: [678732],
+                data: [672],
                 backgroundColor: '#3e39ff',
             }
         ]
@@ -191,7 +209,8 @@ new Chart(totalSpentNormal, {
                             label += ': ';
                         }
                         if (context.parsed.y !== null) {
-                            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                            // label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                            label += context.parsed.y + " articles";
                         }
                         return label;
                     }
@@ -205,7 +224,7 @@ new Chart(totalSpentNormal, {
             y: {
                 title: {
                     display: true,
-                    text: 'Spend (Currency)'
+                    text: 'Spend (Articles)'
                 },
                 stacked: true,
                 grid: {
@@ -219,13 +238,15 @@ new Chart(totalSpentNormal, {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12" data-pgc="overview-requestThroughput">
-                                <div class="card">
+                            <div class="col-xl-6" data-pgc="overview-requestThroughput" data-pgc-field="overview-requestThroughput">
+                                <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
                                 </script>
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Request throughput</h2>
-                                        <div id="chart"></div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h4 text-center">New requests</h2>
+                                        <div class="align-items-center d-flex flex-grow-1">
+                                            <div id="chart" class="flex-grow-1"></div>
+                                        </div>
                                         <script src="../../../../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
@@ -234,18 +255,14 @@ new Chart(totalSpentNormal, {
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Accounts</h2>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
-                                        </div>
                                         <div class="table-responsive-xl">
                                             <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
                                                         <th scope="col" class="align-bottom">Agreement</th> 
-                                                        <th scope="col" class="align-bottom">Account</th> 
-                                                        <th scope="col" class="align-bottom text-end"># Institutions</th> 
+                                                        <th scope="col" class="align-bottom">Group</th>
+                                                        <th scope="col" class="align-bottom">Journal revenue model</th> 
+                                                        <th scope="col" class="align-bottom text-end"># Institutions</th>
                                                         <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                         <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                         <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -254,43 +271,30 @@ new Chart(totalSpentNormal, {
                                                         <th scope="col" class="align-bottom text-center">Currency</th> 
                                                     </tr>
                                                     <tr> 
-                                                        <th scope="row" class="align-middle" rowspan="3">Wiley-KEMO/FWF hybrid 2022</th> 
-                                                        <td class="align-middle"><b>All</b></td> 
-                                                        <td class="align-middle text-end">24</td> 
-                                                        <td class="align-middle text-end"><a href="">40</a></td>
-                                                        <td class="align-middle text-end"><a href="">380</a></td>
-                                                        <td class="align-middle text-end">870,123</td>
-                                                        <td class="align-middle text-end">40,357</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                    </tr>
-                                                    <tr> 
+                                                        <th scope="row" class="align-middle" rowspan="2">Wiley-KEMÖ/FWF</th>
                                                         <td class="align-middle">FWF</td> 
-                                                        <td class="align-middle text-end">24</td> 
-                                                        <td class="align-middle text-end"><a href="">23</a></td>
-                                                        <td class="align-middle text-end"><a href="">223</a></td>
-                                                        <td class="align-middle text-end">562,678</td>
-                                                        <td class="align-middle text-end">23,034</td>
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">31</td>
+                                                        <td class="align-middle text-end"><a href="">8</a></td>
+                                                        <td class="align-middle text-end"><a href="">185</a></td>
+                                                        <td class="align-middle text-end">185</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td>
                                                     </tr>                                                     
                                                     <tr> 
-                                                        <td class="align-middle">KEMO</td> 
-                                                        <td class="align-middle text-end">24</td> 
+                                                        <td class="align-middle">Self-administrated</td> 
+                                                        <td class="align-middle text-start">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end">31</td>
                                                         <td class="align-middle text-end"><a href="">17</a></td>
                                                         <td class="align-middle text-end"><a href="">157</a></td>
-                                                        <td class="align-middle text-end">307,956</td>
-                                                        <td class="align-middle text-end">17,323</td>
+                                                        <td class="align-middle text-end">157</td>
+                                                        <td class="align-middle text-end">0</td>
                                                         <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td> 
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">pub.</span></td> 
                                                     </tr>                                                     
                                                 </tbody>                                                 
                                             </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">1 agreement</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -300,19 +304,23 @@ new Chart(totalSpentNormal, {
                                     <div class="card-body">
                                         <h2 class="card-title h4">Institutions</h2>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">24 institutions</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">24 institutions</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
-                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Previous</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">1</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">2</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">3</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
                                                         </li>                                                         
                                                     </ul>                                                     
                                                 </nav>
@@ -326,7 +334,6 @@ new Chart(totalSpentNormal, {
                                                         <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
                                                         <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
                                                         <th scope="col" class="text-end">Relative spend&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Average days to approve&nbsp;<strong>⭥</strong></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -335,81 +342,76 @@ new Chart(totalSpentNormal, {
                                                         <td class="align-middle text-end"><a href="#">12</a></td>
                                                         <td class="align-middle text-end"><a href="#">42</a></td>
                                                         <td class="align-middle text-end">25%<br/></td>
-                                                        <td class="align-middle text-end">3<br></td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Central European University</td>
                                                         <td class="align-middle text-end"><a href="#">2</a></td>
                                                         <td class="align-middle text-end"><a href="#">23</a></td>
                                                         <td class="align-middle text-end">12.5%</td>
-                                                        <td class="align-middle text-end">&lt;1</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Donau-Universität Krems (Danube University Krems)</td>
                                                         <td class="align-middle text-end"><a href="#">1</a></td>
                                                         <td class="align-middle text-end"><a href="#">32</a></td>
                                                         <td class="align-middle text-end">18%</td>
-                                                        <td class="align-middle text-end">1</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Fachhochschule Oberösterreich (University of Applied Sciences Upper Austria)</td>
                                                         <td class="align-middle text-end"><a href="#">0</a></td>
                                                         <td class="align-middle text-end"><a href="#">12</a></td>
                                                         <td class="align-middle text-end">6%</td>
-                                                        <td class="align-middle text-end">3</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Forschungsinstitut für Molekulare Pathologie GmbH (Research Institute of Molecular Pathology)</td>
                                                         <td class="align-middle text-end"><a href="#">6</a></td>
                                                         <td class="align-middle text-end"><a href="#">6</a></td>
                                                         <td class="align-middle text-end">3%</td>
-                                                        <td class="align-middle text-end">3</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Gregor Mendel Institute of Molecular Plant Biology GmbH</td>
                                                         <td class="align-middle text-end"><a href="#">2</a></td>
                                                         <td class="align-middle text-end"><a href="#">2</a></td>
                                                         <td class="align-middle text-end">1%</td>
-                                                        <td class="align-middle text-end">5</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Institut für Molekulare Biotechnologie GmbH (Institute of Molecular Biotechnology)</td>
                                                         <td class="align-middle text-end"><a href="#">0</a></td>
                                                         <td class="align-middle text-end"><a href="#">25</a></td>
                                                         <td class="align-middle text-end">12.6%</td>
-                                                        <td class="align-middle text-end">&lt;1</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">Institute of Science and Technology Austria</td>
                                                         <td class="align-middle text-end"><a href="#">0</a></td>
                                                         <td class="align-middle text-end"><a href="#">17</a></td>
                                                         <td class="align-middle text-end">7.5%</td>
-                                                        <td class="align-middle text-end">1</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="align-middle">International Institute for Applied Systems Analysis (IIASA)</td>
                                                         <td class="align-middle text-end"><a href="#">1</a></td>
                                                         <td class="align-middle text-end"><a href="#">19</a></td>
                                                         <td class="align-middle text-end">8%</td>
-                                                        <td class="align-middle text-end">3</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto">
-                                                <span class="badge bg-secondary">24 institutions</span>
+                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">24 institutions</span>
                                                 <nav class="ms-3"> 
                                                     <ul class="mb-0 pagination pagination-sm"> 
-                                                        <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Previous</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">1</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">2</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">3</a>
                                                         </li>                                                         
-                                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
                                                         </li>                                                         
                                                     </ul>                                                     
                                                 </nav>

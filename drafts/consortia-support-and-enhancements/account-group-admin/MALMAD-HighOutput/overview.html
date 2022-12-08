@@ -21,15 +21,11 @@
                 </div>
                 <div class="border-top d-flex flex-column justify-content-between offcanvas-body p-0">
                     <nav>
-                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
+                        <div class="list-group list-group-flush"> <a class="active align-items-center d-flex fw-bold justify-content-between list-group-item list-group-item-action px-4 py-3" href="../../../../master-pages/overview.html" data-pgc-field="nav-overview"><span class="small">Overview</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-tasks"><span class="small">Tasks</span><span class="badge bg-secondary">12 / 0</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="../requests.html" data-pgc-field="nav-requests"><span class="small">Requests</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-inbox"><span class="small">Inbox</span></a> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-agreements"><span class="small">Agreements</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-accounts"><span class="small">Accounts</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-transactions"><span class="small">Transactions</span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#" data-pgc-field="nav-reporting"><span class="small">Reporting</span></a> 
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD<br/><span class="fw-normal">High output</span></span><span class="mdi mdi-18px mdi-bank"></span></a>
-                            <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">MALMAD<br/><span class="fw-normal">High output</span></span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -40,21 +36,19 @@
                         <h1 class="fw-bold mb-4" data-pgc-field="title">Overview</h1>
                         <section data-pg-name="filters">
                             <div class="g-2 row">
-                                
-                                
                                 <div class="col-auto" data-pgc-field="filterPublisher">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectPublisher">Publisher</label>
                                         <select class="border form-select" id="inputGroupSelectPublisher" style="max-width: 150px;">
-                                            <option selected value="1">Wiley</option>
-                                            <option value="2">Taylor & Francis</option>
-                                            <option value="3">Elsevier</option>
-                                            <option value="3">ACS</option>
-                                            <option value="3">Springer Nature</option>
+                                            <option selected value="1">All</option>
+                                            <option value="2">Wiley</option>
+                                            <option value="3">Taylor & Francis</option>
+                                            <option value="4">Elsevier</option>
+                                            <option value="5" "">ACS</option>
+                                            <option value="6">Springer Nature</option>
                                         </select>
                                     </div>
                                 </div>
-                                
                                 <div class="col-auto" data-pgc-field="filterInstitution">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
@@ -82,7 +76,9 @@
                                     </div>
                                 </div>
                                 <div class="col-auto" data-pgc-field="filter">
-                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex"><span class="mdi mdi-18px mdi-plus-thick me-1"></span><span>Add Filters</span>
+                                    <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex">
+                                        <span class="mdi mdi-18px mdi-plus-thick me-1"></span>
+                                        <span>Add Filters</span>
                                     </button>
                                 </div>
                             </div>
@@ -91,36 +87,35 @@
                     <main>
                         <div class="g-5 row">
                             <div class="col-xl-6" data-pgc="overview-totalRequests">
-        <div class="card d-flex h-100 text-center">
-            <div class="card-body d-flex flex-column justify-content-center">
-                <h2 class="card-title h4">Total Requests</h2>
-                <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
-                <div class="row">
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Pending</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Approved</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Paid</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">672</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Denied</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
-                    </div>
-                    <div class="col">
-                        <h3 class="h6"><a href="#">Cancelled</a></h3>
-                        <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-                            
+                                <div class="card d-flex h-100 text-center">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <h2 class="card-title h4">Total requests</h2>
+                                        <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Pending</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Approved</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Paid</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">672</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Denied</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Cancelled</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-xl-6">
                                 <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js">
@@ -185,58 +180,64 @@ new Chart(totalSpentNormal, {
                                     </script>
                                     </div>
                                 </div>
-                            </div><div class="col-12" data-pgc="overview-requestThroughput">
-                                <div class="card">
+                            </div>
+                            <div class="col-xl-6" data-pgc="overview-requestThroughput" data-pgc-field="overview-requestThroughput">
+                                <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
                                 </script>
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Request throughput</h2>
-                                        <div id="chart"></div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h4 text-center">New requests</h2>
+                                        <div class="align-items-center d-flex flex-grow-1">
+                                            <div id="chart" class="flex-grow-1"></div>
+                                        </div>
                                         <script src="../../../../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
-                            </div><div class="col-12" data-pgc="overview-groups">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title h4">Groups</h2>
-                <div class="d-flex justify-content-between">
-                    <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary" data-pgc-field="badgeTop">1 groups</span>
-                    </div>
-                </div>
-                <div>
-                    <table class="mt-3 table table-sm">
-                        <thead>
-                            <tr>
-                                <th scope="col">Group&nbsp;<strong>⭥</strong></th>
-                                <th scope="col">Journal type&nbsp;<strong>⭥</strong></th>
-                                <th scope="col" class="text-end">
+                            </div>
+                            <div class="col-12" data-pgc="overview-groups">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h4">Groups</h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary" data-pgc-field="badgeTop">1 groups</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <table class="mt-3 table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Group&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col">Journal type&nbsp;<strong>⭥</strong></th>
+                                                        <th scope="col" class="text-end">
                                                         Institutions&nbsp;<strong>⭥</strong></th>
-                                <th scope="col" class="text-end">Paid
+                                                        <th scope="col" class="text-end">Paid
                                                         Requests&nbsp;<strong>⭥</strong></th>
-                                <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong> </th>
-                                <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong> </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-pgc-field="row-group">
-                                <th scope="row" class="align-middle" data-pgc-field="cell-group">High output</th>
-                                <td class="align-middle" data-pgc-field="cell-group">Hybrid Open Access</td>
-                                <td class="align-middle text-end" data-pgc-field="cell-group">10</td>
-                                <td class="align-middle text-end" data-pgc-field="cell-group"><a href="#">560</a></td>
-                                <td class="align-middle text-end" data-pgc-field="cell-group">560 articles</td>
-                                <td class="align-middle text-end" data-pgc-field="cell-group">120 articles</td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary" data-pgc-field="badgeBottom">1 groups</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><div data-pgc="overview-institutions">
+                                                        <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong> </th>
+                                                        <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong> </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-pgc-field="row-group">
+                                                        <th scope="row" class="align-middle" data-pgc-field="cell-group">High output</th>
+                                                        <td class="align-middle" data-pgc-field="cell-group">Hybrid Open Access</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-group">10</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-group"><a href="#">560</a></td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-group">560 articles</td>
+                                                        <td class="align-middle text-end" data-pgc-field="cell-group">120 articles</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="align-items-center d-flex ms-auto">
+                                                <span class="badge bg-secondary" data-pgc-field="badgeBottom">1 groups</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-pgc="overview-institutions">
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="card-title h4">Institutions</h2>
@@ -279,60 +280,61 @@ new Chart(totalSpentNormal, {
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">12</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Bar-Ilan University</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">1</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Holon Institute of Technology</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">5</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Israel Institute for Biological Research</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">0</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Kibbutzim College of Education Technology and the Arts</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">0</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Oranim Academic College of Education</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">3</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">ORT Braude College</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">3</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Sami Shamoon College of Engineering</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">7</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Technion Israel Institute of Technology</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">11</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
-                                                    </tr><tr data-pgc-field="row-institution">
+                                                    </tr>
+                                                    <tr data-pgc-field="row-institution">
                                                         <td class="align-middle" data-pgc-field="cell-institution">Tel-Hai College</td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">1</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution"><a href="#">42</a></td>
                                                         <td class="align-middle text-end" data-pgc-field="cell-institution">25%<br/></td>
                                                     </tr>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
                                                 </tbody>
                                             </table>
                                         </div>
@@ -362,8 +364,6 @@ new Chart(totalSpentNormal, {
                                     </div>
                                 </div>
                             </div>
-                            
-                            
                         </div>
                     </main>
                 </div>
@@ -378,9 +378,8 @@ new Chart(totalSpentNormal, {
                 <p>This design is for illustrative purposes only.</p>
                 <section data-pgc-field="UXSpec-body">
                     <p>Design for a consortia group admin (child consortium, other group of institutions, or other factor). Using <b>MALMAD</b> as an example.</p>
-                    <p>MALMAD splits their institutions into 2 groups, high and low output.</p><p>A MALMAD high output group admin should see only the data for requests moving through the institutions within the high output group.</p>
-                    
-                    
+                    <p>MALMAD splits their institutions into 2 groups, high and low output.</p>
+                    <p>A MALMAD high output group admin should see only the data for requests moving through the institutions within the high output group.</p>
                 </section>
             </div>             
         </div>
