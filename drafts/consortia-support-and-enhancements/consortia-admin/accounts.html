@@ -91,8 +91,7 @@
                         <div class="mb-5">
                             <div class="align-items-end d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-accountsDetailedView">Detailed view</button>
-                                <div class="align-items-center d-flex ms-auto">
-                                    <span class="badge bg-secondary">2 accounts</span>
+                                <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 accounts</span>
                                 </div>
                             </div>
                             <div class="my-3">
@@ -162,8 +161,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <div class="align-items-center d-flex ms-auto">
-                                    <span class="badge bg-secondary">2 accounts</span>
+                                <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">2 accounts</span>
                                 </div>
                             </div>
                         </div>
@@ -200,11 +198,11 @@
                                         <select class="form-select w-auto" aria-label="Default select example">
                                             <option selected>Open this select menu</option>
                                             <optgroup label="Wiley">
-                                                <option value="1">Wiley-JISC</option>
+                                                <option value="1">Wiley-Projekt DEAL</option>
                                             </optgroup>
                                             <optgroup label="Taylor & Francis">
-                                                <option value="2">T&F-JISC HOA</option>
-                                                <option value="3">T&F-JISC GOA</option>
+                                                <option value="2">T&F-DEAL HOA</option>
+                                                <option value="3">T&F-DEAL GOA</option>
                                             </optgroup>
                                         </select>
                                         <button class="btn btn-primary" type="button" data-bs-target="#modal-accountsDetailedViewSelected" data-bs-toggle="modal">Submit</button>
@@ -218,7 +216,7 @@
                     </div>                     
                 </div>                 
             </div>
-            <div class="fade modal pg-show-modal" id="modal-accountsDetailedViewSelected" tabindex="-1" role="dialog" aria-hidden="true" data-bs-backdrop="true" data-pgc="modal-accountsDetailedViewSelected"> 
+            <div class="fade modal pg-show-modal" id="modal-accountsDetailedViewSelected" tabindex="-1" role="dialog" aria-hidden="true" data-bs-backdrop="true"> 
                 <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down modal-xl"> 
                     <div class="modal-content"> 
                         <div class="modal-header"> 
@@ -241,37 +239,18 @@
                                             </optgroup>
                                         </select>
                                         <button class="btn btn-primary" type="button">Submit</button>
+                                        <button class="btn btn-outline-primary" type="button">Export data</button>
                                     </div>
                                 </div>
                             </form>
-                            <div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="align-items-center d-flex ms-auto">
-                                        <span class="badge bg-secondary">1,346 accounts</span>
-                                        <nav class="ms-3"> 
-                                            <ul class="mb-0 pagination pagination-sm"> 
-                                                <li class="page-item"><a class="page-link" href="#">Previous</a>
-                                                </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">1</a>
-                                                </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">2</a>
-                                                </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">3</a>
-                                                </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">Next</a>
-                                                </li>                                                 
-                                            </ul>                                             
-                                        </nav>
-                                    </div>
-                                </div>
+                            <div class="my-4">
+                                <h5>Agreement accounts<span class="badge bg-secondary ms-2">1 account</span></h5>
                                 <div class="my-3">
                                     <div class="table-responsive-xl">
                                         <table class="border rounded small table"> 
                                             <tbody> 
                                                 <tr> 
-                                                    <th scope="col" class="align-bottom">Account name</th> 
-                                                    <th scope="col" class="align-bottom">Institution</th>
-                                                    <th scope="col" class="align-bottom">Group</th> 
+                                                    <th scope="col" class="align-bottom">Agreement account</th> 
                                                     <th scope="col" class="align-bottom text-end"># Pending requests</th>
                                                     <th scope="col" class="align-bottom text-end"># Paid requests</th>
                                                     <th scope="col" class="align-bottom text-end">Total spent</th>
@@ -280,108 +259,7 @@
                                                     <th scope="col" class="align-bottom text-center">Currency</th>
                                                 </tr>
                                                 <tr> 
-                                                    <td class="align-middle">M_FLIP_3097_ProjektDEAL</td>
-                                                    <td class="align-middle">Abgeordnetenhaus Berlin</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_3329_ProjektDEAL</td>
-                                                    <td class="align-middle">Abraham Geiger Kolleg gGmbH</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_3457_ProjektDEAL</td>
-                                                    <td class="align-middle">Akademie der Bildenden Künste München</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_3468_ProjektDEAL</td>
-                                                    <td class="align-middle">Amt fur Gesundheit Plon</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_4210_ProjektDEAL</td>
-                                                    <td class="align-middle">AWI Polar- und Meeresforschung</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_5153_ProjektDEAL</td>
-                                                    <td class="align-middle">Botanische Staatssammlung Munchen</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_8863_ProjektDEAL</td>
-                                                    <td class="align-middle">Bundesgerichtshof</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_FLIP_9637_ProjektDEAL</td>
-                                                    <td class="align-middle">Bundesverfassungsgerichts</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_OA_1004_ProjektDEAL</td>
-                                                    <td class="align-middle">Deutsches Herzzentrum Berlin</td>
-                                                    <td class="align-middle">MPDLS</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">53,678</td>
-                                                    <td class="align-middle text-end">3,134</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
-                                                <tr> 
-                                                    <td class="align-middle">M_OA_1011_ProjektDEAL</td>
-                                                    <td class="align-middle">EBZ Business School - University of Applied Sciences</td>
-                                                    <td class="align-middle">MPDLS</td> 
+                                                    <td class="align-middle">Wiley-DEAL</td>
                                                     <td class="align-middle text-end"><a href="">3</a></td>
                                                     <td class="align-middle text-end"><a href="">32</a></td>
                                                     <td class="align-middle text-end">53,678</td>
@@ -393,20 +271,241 @@
                                         </table>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="my-4">
+                                <h5>Group accounts<span class="badge bg-secondary ms-2">2 accounts</span></h5>
+                                <div class="my-3">
+                                    <div class="table-responsive-xl">
+                                        <table class="border rounded small table"> 
+                                            <tbody> 
+                                                <tr> 
+                                                    <th scope="col" class="align-bottom">Group account</th> 
+                                                    <th scope="col" class="align-bottom text-end"># Pending requests</th>
+                                                    <th scope="col" class="align-bottom text-end"># Paid requests</th>
+                                                    <th scope="col" class="align-bottom text-end">Total spent</th>
+                                                    <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                    <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                    <th scope="col" class="align-bottom text-center">Currency</th>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">Flip Accounts</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                            </tbody>                                             
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <h5>Institutions<span class="badge bg-secondary ms-2">912 institutions</span></h5>
                                 <div class="d-flex justify-content-between">
                                     <div class="align-items-center d-flex ms-auto">
-                                        <span class="badge bg-secondary">1,346 accounts</span>
                                         <nav class="ms-3"> 
                                             <ul class="mb-0 pagination pagination-sm"> 
-                                                <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Previous</a>
                                                 </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">1</a>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">1</a>
                                                 </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">2</a>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
                                                 </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">3</a>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
                                                 </li>                                                 
-                                                <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>                                                 
+                                            </ul>                                             
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <div class="table-responsive-xl">
+                                        <table class="border rounded small table"> 
+                                            <tbody> 
+                                                <tr> 
+                                                    <th scope="col" class="align-bottom">Institution</th>
+                                                    <th scope="col" class="align-bottom">Group</th>
+                                                    <th scope="col" class="align-bottom">Journal revenue model</th> 
+                                                    <th scope="col" class="align-bottom text-end"># Pending requests</th>
+                                                    <th scope="col" class="align-bottom text-end"># Paid requests</th>
+                                                    <th scope="col" class="align-bottom text-end">Total spent</th>
+                                                    <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                    <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                    <th scope="col" class="align-bottom text-center">Currency</th>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle" rowspan="3">Abgeordnetenhaus Berlin</td>
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle">Gold Open Access</td> 
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle">Hybrid Open Access</td> 
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">Flip Accounts</td>
+                                                    <td class="align-middle">Both</td> 
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle" rowspan="2">Abraham Geiger Kolleg gGmbH</td>
+                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">Gold Open Access</td> 
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">Hybrid Open Access</td> 
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle" rowspan="2">Akademie der Bildenden Künste München</td>
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle">Gold Open Access</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle">Hybrid Open Access</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle" rowspan="3">Amt fur Gesundheit Plon</td>
+                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">Gold Open Access</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">Hybrid Open Access</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">Flip Accounts</td>
+                                                    <td class="align-middle">Both</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle" rowspan="2">AWI Polar- und Meeresforschung</td>
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle">Gold Open Access</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">53,678</td>
+                                                    <td class="align-middle text-end">3,134</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="align-middle">MPDLS</td>
+                                                    <td class="align-middle">Hybrid Open Access</td>
+                                                    <td class="align-middle text-end"><a href="">3</a></td>
+                                                    <td class="align-middle text-end"><a href="">32</a></td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-end">N/A</td>
+                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                </tr>
+                                            </tbody>                                             
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="align-items-center d-flex ms-auto">
+                                        <nav class="ms-3"> 
+                                            <ul class="mb-0 pagination pagination-sm"> 
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Previous</a>
+                                                </li>                                                 
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>                                                 
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>                                                 
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
+                                                </li>                                                 
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
                                                 </li>                                                 
                                             </ul>                                             
                                         </nav>
