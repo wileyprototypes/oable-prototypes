@@ -57,16 +57,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto" data-pgc-field="filterAccountGroup">
-                                    <div class="input-group input-group-sm">
-                                        <label class="input-group-text" for="inputGroupSelectAccountGroup">Account group</label>
-                                        <select class="border form-select" id="inputGroupSelectAccountGroup" style="max-width: 150px;">
-                                            <option selected value="1">All</option>
-                                            <option value="2">MALMAD Group A</option>
-                                            <option value="3">MALMAD Group B</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                
                                 <div class="col-auto" data-pgc-field="filterInstitution">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-text" for="inputGroupSelectInstitution">Institution</label>
@@ -91,12 +82,12 @@
                         <div class="mb-5">
                             <div class="align-items-end d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-accountsDetailedView">Detailed view</button>
-                                <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">5 accounts</span>
+                                <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 account</span>
                                 </div>
                             </div>
                             <div class="my-3">
                                 <div class="table-responsive-xxl">
-                                    <table class="border my-3 small table"> 
+                                    <table class="my-3 small table"> 
                                                 <tbody> 
                                                     <tr> 
                                                         <th scope="col" class="align-bottom">Agreement</th>
@@ -111,16 +102,7 @@
                                                         <th scope="col" class="align-bottom text-end">Available balance</th>
                                                         <th scope="col" class="align-bottom text-center">Currency</th><th scope="col" class="align-bottom text-center">Actions</th> 
                                                     </tr>
-                                                    <tr><th scope="row" class="align-middle" rowspan="5">Wiley-Projekt DEAL</th><td class="align-middle" rowspan="5">Wiley</td> 
-                                                        <td class="align-middle text-start">Flip accounts</td><td class="align-middle text-start">Both</td>
-                                                        <td class="align-middle text-end"><a href="#" data-bs-target="#modal-accountsDetailedViewSelected" data-bs-toggle="modal">52</a></td> 
-                                                        <td class="align-middle text-end"><a href="">12</a></td>
-                                                        <td class="align-middle text-end"><a href="">126</a></td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td><td class="align-middle text-center"></td> 
-                                                    </tr><tr> 
+                                                    <tr><th scope="row" class="align-middle" rowspan="2">Wiley-Projekt DEAL</th><td class="align-middle" rowspan="2">Wiley</td> 
                                                         
                                                         
                                                         <td class="align-middle" rowspan="2">MPDLS</td> 
@@ -143,55 +125,14 @@
                                                         <td class="align-middle text-end">N/A</td>
                                                         <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td><td class="align-middle text-center"></td>
                                                     </tr>                                                     
-                                                    <tr> 
-                                                        <td class="align-middle" rowspan="2">Self-administrated</td> 
-                                                        <td class="align-middle text-start">Gold Open Access</td>
-                                                        <td class="align-middle text-end"><a href="#" data-bs-target="#modal-accountsDetailedViewSelected" data-bs-toggle="modal">339</a></td> 
-                                                        <td class="align-middle text-end"><a href="">17</a></td>
-                                                        <td class="align-middle text-end"><a href="">157</a></td>
-                                                        <td class="align-middle text-end">945,356</td>
-                                                        <td class="align-middle text-end">12,453</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td><td class="align-middle text-center"></td> 
-                                                    </tr>
-                                                    <tr> 
-                                                        <td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end"><a href="#" data-bs-target="#modal-accountsDetailedViewSelected" data-bs-toggle="modal">339</a></td> 
-                                                        <td class="align-middle text-end"><a href="">12</a></td>
-                                                        <td class="align-middle text-end"><a href="">126</a></td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td><td class="align-middle text-center"></td> 
-                                                    </tr><tr><th scope="row" class="align-middle">T&amp;F-DEAL</th><td class="align-middle">Taylor &amp; Francis</td> 
-                                                        <td class="align-middle text-start">N/A</td><td class="align-middle text-start">Gold Open Access</td>
-                                                        <td class="align-middle text-end"><a href="#">912</a></td> 
-                                                        <td class="align-middle text-end"><a href="">12</a></td>
-                                                        <td class="align-middle text-end"><a href="">126</a></td>
-                                                        <td class="align-middle text-end">1,234,567</td>
-                                                        <td class="align-middle text-end">98,765</td>
-                                                        <td class="align-middle text-end">2,321,123</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td><td class="align-middle text-center"><button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex justify-content-center p-1">
-                                                    <span class="mdi mdi-18px mdi-plus-thick"></span>
-                                                </button></td> 
-                                                    </tr><tr><th scope="row" class="align-middle">T&amp;F-DEAL</th><td class="align-middle">Taylor &amp; Francis</td> 
-                                                        <td class="align-middle text-start">N/A</td><td class="align-middle text-start">Hybrid Open Access</td>
-                                                        <td class="align-middle text-end"><a href="#">912</a></td> 
-                                                        <td class="align-middle text-end"><a href="">12</a></td>
-                                                        <td class="align-middle text-end"><a href="">126</a></td>
-                                                        <td class="align-middle text-end">2,345,678</td>
-                                                        <td class="align-middle text-end">87,654</td>
-                                                        <td class="align-middle text-end">123,123</td>
-                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td><td class="align-middle text-center"><button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex justify-content-center p-1">
-                                                    <span class="mdi mdi-18px mdi-plus-thick"></span>
-                                                </button></td> 
-                                                    </tr>                                                     
+                                                    
+                                                                                                         
                                                 </tbody>                                                 
                                             </table>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">5 accounts</span>
+                                <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">1 account</span>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +291,7 @@
                                 </div>
                             </div>
                             <div class="my-4">
-                                <h5>Institutions<span class="badge bg-secondary ms-2">912 institutions</span></h5>
+                                <h5>Institutions<span class="badge bg-secondary ms-2">463 institutions</span></h5>
                                 <div class="d-flex justify-content-between">
                                     <div class="input-group input-group-sm">
                                         <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Institution name" style="max-width: 300px;"/>
@@ -395,7 +336,7 @@
                                                     <th scope="col" class="align-bottom text-center">Currency</th>
                                                 </tr>
                                                 <tr> 
-                                                    <td class="align-middle" rowspan="3">Abgeordnetenhaus Berlin</td>
+                                                    <td class="align-middle" rowspan="2">Abgeordnetenhaus Berlin</td>
                                                     <td class="align-middle">MPDLS</td>
                                                     <td class="align-middle">Gold Open Access</td> 
                                                     <td class="align-middle text-end"><a href="">3</a></td>
@@ -415,19 +356,10 @@
                                                     <td class="align-middle text-end">N/A</td>
                                                     <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                 </tr>
-                                                <tr> 
-                                                    <td class="align-middle">Flip Accounts</td>
-                                                    <td class="align-middle">Both</td> 
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
+                                                
                                                 <tr> 
                                                     <td class="align-middle" rowspan="2">Abraham Geiger Kolleg gGmbH</td>
-                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">MPDLS</td>
                                                     <td class="align-middle">Gold Open Access</td> 
                                                     <td class="align-middle text-end"><a href="">3</a></td>
                                                     <td class="align-middle text-end"><a href="">32</a></td>
@@ -437,7 +369,7 @@
                                                     <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                 </tr>
                                                 <tr> 
-                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">MPDLS</td>
                                                     <td class="align-middle">Hybrid Open Access</td> 
                                                     <td class="align-middle text-end"><a href="">3</a></td>
                                                     <td class="align-middle text-end"><a href="">32</a></td>
@@ -468,8 +400,8 @@
                                                     <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                 </tr>
                                                 <tr> 
-                                                    <td class="align-middle" rowspan="3">Amt fur Gesundheit Plon</td>
-                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle" rowspan="2">Amt fur Gesundheit Plon</td>
+                                                    <td class="align-middle">MPDLS</td>
                                                     <td class="align-middle">Gold Open Access</td>
                                                     <td class="align-middle text-end"><a href="">3</a></td>
                                                     <td class="align-middle text-end"><a href="">32</a></td>
@@ -479,7 +411,7 @@
                                                     <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                 </tr>
                                                 <tr> 
-                                                    <td class="align-middle">Self administrated</td>
+                                                    <td class="align-middle">MPDLS</td>
                                                     <td class="align-middle">Hybrid Open Access</td>
                                                     <td class="align-middle text-end"><a href="">3</a></td>
                                                     <td class="align-middle text-end"><a href="">32</a></td>
@@ -488,16 +420,7 @@
                                                     <td class="align-middle text-end">N/A</td>
                                                     <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
                                                 </tr>
-                                                <tr> 
-                                                    <td class="align-middle">Flip Accounts</td>
-                                                    <td class="align-middle">Both</td>
-                                                    <td class="align-middle text-end"><a href="">3</a></td>
-                                                    <td class="align-middle text-end"><a href="">32</a></td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-end">N/A</td>
-                                                    <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
-                                                </tr>
+                                                
                                                 <tr> 
                                                     <td class="align-middle" rowspan="2">AWI Polar- und Meeresforschung</td>
                                                     <td class="align-middle">MPDLS</td>

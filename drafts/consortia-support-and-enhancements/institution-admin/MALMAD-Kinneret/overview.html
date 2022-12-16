@@ -25,7 +25,7 @@
                         </div>
                     </nav>
                     <nav class="border-top">
-                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">University of Bath</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
+                        <div class="list-group list-group-flush"> <a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small text-truncate" data-pgc-field="myOrg">My organization</span><span class="mdi mdi-18px mdi-bank"></span></a><a class="align-items-center d-flex fw-bold justify-content-between list-group-item px-4 py-3" href="#"><span class="small">My Account</span><span class="mdi mdi-18px mdi-account"></span></a> 
                         </div>
                     </nav>
                 </div>
@@ -73,147 +73,125 @@
                     </header>
                     <main>
                         <div class="g-5 row">
-                            <div class="col">
+                            
+                            <div class="col-xl-6" data-pgc="overview-totalRequests">
                                 <div class="card d-flex h-100 text-center">
                                     <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Requests</h2>
-                                        <p class="fs-1 fw-bold">72</p>
+                                        <h2 class="card-title h4">Total requests</h2>
+                                        <p class="fs-1 fw-bold" data-pgc-field="totalRequests-values">700</p>
                                         <div class="row">
                                             <div class="col">
                                                 <h3 class="h6"><a href="#">Pending</a></h3>
-                                                <p class="fs-4 fw-bold">12</p>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">12</p>
                                             </div>
                                             <div class="col">
                                                 <h3 class="h6"><a href="#">Approved</a></h3>
-                                                <p class="fs-4 fw-bold">50</p>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="h6"><a href="#">Paid</a></h3>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">672</p>
                                             </div>
                                             <div class="col">
                                                 <h3 class="h6"><a href="#">Denied</a></h3>
-                                                <p class="fs-4 fw-bold">4</p>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">4</p>
                                             </div>
                                             <div class="col">
                                                 <h3 class="h6"><a href="#">Cancelled</a></h3>
-                                                <p class="fs-4 fw-bold">6</p>
+                                                <p class="fs-4 fw-bold" data-pgc-field="totalRequests-values">6</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-6">
-                                <div class="card d-flex h-100 text-center">
-                                    <div class="card-body d-flex flex-column justify-content-center">
-                                        <h2 class="card-title h4">Total Spend</h2>
-                                        <p>All  accounts</p>
-                                        <div>
-                                            <table class="mt-4 table table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col" class="text-start">Account name&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle text-start"><a href="#">Wiley-MALMAD Kinneret hybrid 2022</a></th>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">23</a></td>
-                                                        <td class="align-middle text-end">23 articles</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle text-start"><a href="#">T&F-MALMAD Kinneret 2022</a></th>
-                                                        <td class="align-middle text-end"><a href="#">6</a></td>
-                                                        <td class="align-middle text-end"><a href="#">12</a></td>
-                                                        <td class="align-middle text-end">$26,790 USD</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle text-start"><a href="#">Prepay general</a></th>
-                                                        <td class="align-middle text-end"><a href="#">4</a></td>
-                                                        <td class="align-middle text-end"><a href="#">15</a></td>
-                                                        <td class="align-middle text-end">&pound;23,234 GBP</td>
-                                                        <td class="align-middle text-end">&pound;45,567 GBP</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                            <div class="col-xl-6">
+                                <div class="card d-flex h-100">
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+                                    <div class="card-body">
+                                        <h2 class="card-title h4 text-center">Total spend</h2>
+                                        <div id="chartJS">
+                                            <canvas id="totalSpentFull"></canvas>
                                         </div>
+                                        <script type="module" src="../../../../assets/js/chartjs-test.js"></script>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="card">
+                            </div><div class="col-xl-6">
+                                <div class="card d-flex h-100">
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+                                    <div class="card-body">
+                                        <h2 class="card-title h4 text-center">Account balances</h2><div class="table-responsive-xl">
+                                            <table class="my-3 small table"> 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <th scope="col" class="align-bottom">Account</th>
+                                                         
+                                                        
+                                                         
+                                                         
+                                                        
+                                                        
+                                                        <th scope="col" class="align-bottom text-end">Total spent</th>
+                                                        <th scope="col" class="align-bottom text-end">Amount planned</th>
+                                                        <th scope="col" class="align-bottom text-end">Available balance</th>
+                                                        <th scope="col" class="align-bottom text-center">Currency</th> 
+                                                    </tr>
+                                                    <tr><th scope="row" class="align-middle">Wiley-Projekt DEAL Hybrid</th> 
+                                                        
+                                                         
+                                                        
+                                                        
+                                                        <td class="align-middle text-end">N/A</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td> 
+                                                    </tr><tr> 
+                                                        
+                                                        
+                                                        <th scope="row" class="align-middle">Wiley-Projekt DEAL Gold</th> 
+                                                        
+                                                         
+                                                        
+                                                        
+                                                        <td class="align-middle text-end">1,345,356</td>
+                                                        <td class="align-middle text-end">22,453</td>
+                                                        <td class="align-middle text-end">N/A</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <th scope="row" class="align-middle">Prepay general</th>
+                                                         
+                                                        
+                                                        
+                                                        <td class="align-middle text-end">147,235</td>
+                                                        <td class="align-middle text-end">3,456</td>
+                                                        <td class="align-middle text-end">25,126</td>
+                                                        <td class="align-middle text-center"><span class="border p-1 rounded small">EUR</span></td>
+                                                    </tr>                                                     
+                                                    
+                                                                                                         
+                                                </tbody>                                                 
+                                            </table>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div><div data-pgc="overview-requestThroughput" data-pgc-field="overview-requestThroughput" class="col-xl-6">
+                                <div class="card d-flex h-100">
                                     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
                                 </script>
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Request throughput</h2>
-                                        <div id="chart"></div>
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h4 text-center">New requests</h2>
+                                        <div class="align-items-center d-flex flex-grow-1">
+                                            <div id="chart" class="flex-grow-1"></div>
+                                        </div>
                                         <script src="../../../../assets/js/charts.js"></script>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2 class="card-title h4">Active Accounts</h2>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="input-group input-group-sm" style="max-width: 250px;">
-                                                <input class="border border-end-0 form-control form-control-sm" type="search" placeholder="Account name"/>
-                                                <button class="align-items-center border border-start-0 btn d-inline-flex" type="button" id="button-addon2"><span class="mdi mdi-18px mdi-magnify"></span>
-                                                </button>
-                                            </div>
-                                            <div class="align-items-center d-flex"><span class="badge bg-secondary">3 accounts</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <table class="mt-4 table table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col" class="text-start">Account name&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col">Connected Agreement&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Pending Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Paid Requests&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Total Spent&nbsp;<strong>⭥</strong></th>
-                                                        <th scope="col" class="text-end">Balance&nbsp;<strong>⭥</strong></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle text-start"><a href="#">Wiley-MALMAD Kinneret hybrid 2022</a></th>
-                                                        <td class="align-middle">Wiley-MALMAD Hybrid 2022</td>
-                                                        <td class="align-middle text-end"><a href="#">2</a></td>
-                                                        <td class="align-middle text-end"><a href="#">23</a></td>
-                                                        <td class="align-middle text-end">23 articles</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle text-start"><a href="#">T&F-MALMAD Kinneret 2022</a></th>
-                                                        <td class="align-middle">T&amp;F-MALMAD 2022</td>
-                                                        <td class="align-middle text-end"><a href="#">6</a></td>
-                                                        <td class="align-middle text-end"><a href="#">12</a></td>
-                                                        <td class="align-middle text-end">$26,790 USD</td>
-                                                        <td class="align-middle text-end">N/A</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="align-middle text-start"><a href="#">Prepay general</a></th>
-                                                        <td class="align-middle">N/A</td>
-                                                        <td class="align-middle text-end"><a href="#">4</a></td>
-                                                        <td class="align-middle text-end"><a href="#">15</a></td>
-                                                        <td class="align-middle text-end">&pound;23,234 GBP</td>
-                                                        <td class="align-middle text-end">&pound;45,567 GBP</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="align-items-center d-flex ms-auto"><span class="badge bg-secondary">3 accounts</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </main>
                 </div>
