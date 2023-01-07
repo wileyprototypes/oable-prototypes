@@ -11,8 +11,10 @@
         <link href="../../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
         <link href="../../../../style.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
-    </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script></head>
     <body>
         <div data-pg-name="App" style="padding-left: 190px;">
             <div class="border-end offcanvas offcanvas-start show" data-bs-scroll="true" id="appMenu" style="width: 190px;" data-bs-backdrop="false" tabindex="-1" data-pg-name="App menu">
@@ -189,14 +191,11 @@
                                 </div>
                             </div><div class="col-xl-6" data-pgc="overview-requestThroughput" data-pgc-field="overview-requestThroughput">
                             <div class="card d-flex h-100">
-                                <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js">
-                                </script>
                                 <div class="card-body d-flex flex-column">
                                     <h2 class="card-title h4 text-center">New requests</h2>
                                     <div class="align-items-center d-flex flex-grow-1">
                                         <div id="chart" class="flex-grow-1"></div>
                                     </div>
-                                    <script src="../../../../../../../assets/js/charts.js"></script>
                                 </div>
                             </div>
                         </div>
@@ -229,5 +228,9 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="../../../../assets/js/popper.min.js"></script>
         <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
-    </body>
+        <script src="../../../../assets/js/chartjs-test.js"></script>
+        <script src="../../../../assets/js/charts.js"></script>
+        
+        
+        </body>
 </html>
