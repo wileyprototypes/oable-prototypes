@@ -1,4 +1,5 @@
 const totalSpentFull = document.getElementById('totalSpentFull'),
+    totalSpentPUBGBP = document.getElementById('totalSpentPUBGBP'),
     totalSpentNormal = document.getElementById('totalSpentNormal'),
     totalSpentKEMOFWF = document.getElementById('totalSpentKEMOFWF');
 
@@ -38,21 +39,114 @@ new Chart(totalSpentFull, {
         ]
     },
     options: {
-        
-             spanGaps: true,
+        spanGaps: true,
         responsive: true,
         layout: {
-            padding: 20
+            padding: 10
         },
         plugins: {
             legend: {
                 display: false
             },
             datalabels: {
+                formatter: function (value, context) {
+                    if (value) {
+                        return value.toLocaleString("en-US") + " " + context.chart.data.labels[context.dataIndex];
+                    }
+                },
                 backgroundColor: 'rgb(255 255 255 / 50%)',
                 color: '#000',
                 font: {
-                    size: 16,
+                    size: 12,
+                    weight: 'bold'
+                }
+            }
+        },
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Currency'
+                },
+                stacked: true,
+                grid: {
+                    color: 'rgb(0 179 227 / 25%)',
+                }
+            },
+            y1: {
+                title: {
+                    display: true,
+                    text: 'Article units'
+                },
+                stacked: true,
+                position: 'right',
+                grid: {
+                    drawOnChartArea: false,
+                    color: 'rgb(232 21 192 / 25%)',
+                }
+
+            }
+        }
+    }
+});
+
+// Total Spent PUBs and GBPs
+new Chart(totalSpentPUBGBP, {
+
+    plugins: [ChartDataLabels],
+    type: 'bar',
+    data: {
+        labels: ['GBP', 'pub.'],
+        datasets: [
+            {
+                label: 'Hybrid Open Access',
+                data: [223567, null],
+                yAxisID: 'y',
+                backgroundColor: '#3e39ff',
+            },
+            {
+                label: 'Gold Open Access',
+                data: [123567, null],
+                yAxisID: 'y',
+                backgroundColor: '#00b3e3',
+            },
+            {
+                label: 'Hybrid Open Access',
+                data: [null, 678],
+                yAxisID: 'y1',
+                backgroundColor: '#a02d8b',
+            },
+            {
+                label: 'Gold Open Access',
+                data: [null, 345],
+                yAxisID: 'y1',
+                backgroundColor: '#e815c0',
+            }
+        ]
+    },
+    options: {
+        spanGaps: true,
+        responsive: true,
+        layout: {
+            padding: 10
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            datalabels: {
+                formatter: function (value, context) {
+                    if (value) {
+                        return value.toLocaleString("en-US") + " " + context.chart.data.labels[context.dataIndex];
+                    }
+                },
+                backgroundColor: 'rgb(255 255 255 / 50%)',
+                color: '#000',
+                font: {
+                    size: 12,
                     weight: 'bold'
                 }
             }
